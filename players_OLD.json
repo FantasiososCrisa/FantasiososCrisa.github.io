@@ -1,0 +1,3239 @@
+[
+  {
+    "name": "Lamine Yamal",
+    "team": "FC Barcelona",
+    "position": "ATT",
+    "price": 146655477,
+    "history": [140000000, 0, 144000000, 146655477]
+  },
+  {
+    "name": "Mbappé",
+    "team": "Real Madrid",
+    "position": "ATT",
+    "price": 145873650,
+    "history": [140000000, 142000000, 144000000, 146655477]
+  },
+  {
+    "name": "Raphinha",
+    "team": "FC Barcelona",
+    "position": "ATT",
+    "price": 120559982,
+    "history": [140000000, 142000000, 144000000, 146655477]
+  },
+  {
+    "name": "Vini Jr.",
+    "team": "Real Madrid",
+    "position": "ATT",
+    "price": 113481446
+  },
+  {
+    "name": "Pedri",
+    "team": "FC Barcelona",
+    "position": "MID",
+    "price": 113038587
+  },
+  {
+    "name": "Nico Williams",
+    "team": "Athletic Club",
+    "position": "ATT",
+    "price": 110265038
+  },
+  {
+    "name": "Huijsen",
+    "team": "Real Madrid",
+    "position": "DEF",
+    "price": 100123648
+  },
+  {
+    "name": "Julián Álvarez",
+    "team": "Atlético de Madrid",
+    "position": "ATT",
+    "price": 94966503
+  },
+  {
+    "name": "Valverde",
+    "team": "Real Madrid",
+    "position": "MID",
+    "price": 91602131
+  },
+  {
+    "name": "Arda Güler",
+    "team": "Real Madrid",
+    "position": "MID",
+    "price": 88651024
+  },
+  {
+    "name": "Antony",
+    "team": "Real Betis",
+    "position": "ATT",
+    "price": 76258587
+  },
+  {
+    "name": "Lo Celso",
+    "team": "Real Betis",
+    "position": "MID",
+    "price": 75699537
+  },
+  {
+    "name": "Courtois",
+    "team": "Real Madrid",
+    "position": "GK",
+    "price": 70181858
+  },
+  {
+    "name": "Lewandowski",
+    "team": "FC Barcelona",
+    "position": "ATT",
+    "price": 65149574
+  },
+  {
+    "name": "Joan García",
+    "team": "FC Barcelona",
+    "position": "GK",
+    "price": 63607110
+  },
+  {
+    "name": "Pau Cubarsí",
+    "team": "FC Barcelona",
+    "position": "DEF",
+    "price": 62249726
+  },
+  {
+    "name": "Á. Carreras",
+    "team": "Real Madrid",
+    "position": "DEF",
+    "price": 59964492
+  },
+  {
+    "name": "Kubo",
+    "team": "Real Sociedad",
+    "position": "MID",
+    "price": 58391818
+  },
+  {
+    "name": "Tchouaméni",
+    "team": "Real Madrid",
+    "position": "MID",
+    "price": 54976114
+  },
+  {
+    "name": "Álex Baena",
+    "team": "Atlético de Madrid",
+    "position": "MID",
+    "price": 52398492
+  },
+  {
+    "name": "F. De Jong",
+    "team": "FC Barcelona",
+    "position": "MID",
+    "price": 52213398
+  },
+  {
+    "name": "Álex Balde",
+    "team": "FC Barcelona",
+    "position": "DEF",
+    "price": 51425335
+  },
+  {
+    "name": "Trent",
+    "team": "Real Madrid",
+    "position": "DEF",
+    "price": 48983293
+  },
+  {
+    "name": "O. Sancet",
+    "team": "Athletic Club",
+    "position": "MID",
+    "price": 48654611
+  },
+  {
+    "name": "Budimir",
+    "team": "C.A. Osasuna",
+    "position": "ATT",
+    "price": 48168104
+  },
+  {
+    "name": "Kounde",
+    "team": "FC Barcelona",
+    "position": "DEF",
+    "price": 47054371
+  },
+  {
+    "name": "Iñaki Williams",
+    "team": "Athletic Club",
+    "position": "ATT",
+    "price": 45064528
+  },
+  {
+    "name": "Ferran",
+    "team": "FC Barcelona",
+    "position": "ATT",
+    "price": 39756622
+  },
+  {
+    "name": "Isco",
+    "team": "Real Betis",
+    "position": "MID",
+    "price": 39531186
+  },
+  {
+    "name": "Dani Olmo",
+    "team": "FC Barcelona",
+    "position": "MID",
+    "price": 39399063
+  },
+  {
+    "name": "Oblak",
+    "team": "Atlético de Madrid",
+    "position": "GK",
+    "price": 39107368
+  },
+  {
+    "name": "Vivian",
+    "team": "Athletic Club",
+    "position": "DEF",
+    "price": 39025218
+  },
+  {
+    "name": "Puado",
+    "team": "RCD Espanyol de Barcelona",
+    "position": "MID",
+    "price": 38613618
+  },
+  {
+    "name": "Ayoze",
+    "team": "Villarreal CF",
+    "position": "ATT",
+    "price": 38195150
+  },
+  {
+    "name": "Oyarzabal",
+    "team": "Real Sociedad",
+    "position": "ATT",
+    "price": 37441858
+  },
+  {
+    "name": "Pepe",
+    "team": "Villarreal CF",
+    "position": "ATT",
+    "price": 37295193
+  },
+  {
+    "name": "Unai Simón",
+    "team": "Athletic Club",
+    "position": "GK",
+    "price": 37041876
+  },
+  {
+    "name": "E. Militão",
+    "team": "Real Madrid",
+    "position": "DEF",
+    "price": 36734219
+  },
+  {
+    "name": "Giuliano",
+    "team": "Atlético de Madrid",
+    "position": "ATT",
+    "price": 35945526
+  },
+  {
+    "name": "Bellingham",
+    "team": "Real Madrid",
+    "position": "MID",
+    "price": 35676620
+  },
+  {
+    "name": "Isi",
+    "team": "Rayo Vallecano",
+    "position": "ATT",
+    "price": 35019639
+  },
+  {
+    "name": "Rashford",
+    "team": "FC Barcelona",
+    "position": "ATT",
+    "price": 34880695
+  },
+  {
+    "name": "Barrios",
+    "team": "Atlético de Madrid",
+    "position": "MID",
+    "price": 32492716
+  },
+  {
+    "name": "Bartra",
+    "team": "Real Betis",
+    "position": "DEF",
+    "price": 30880926
+  },
+  {
+    "name": "Sørloth",
+    "team": "Atlético de Madrid",
+    "position": "ATT",
+    "price": 30585349
+  },
+  {
+    "name": "F. Mastantuono",
+    "team": "Real Madrid",
+    "position": "ATT",
+    "price": 30513067
+  },
+  {
+    "name": "Marcos Llorente",
+    "team": "Atlético de Madrid",
+    "position": "MID",
+    "price": 29724214
+  },
+  {
+    "name": "Almada",
+    "team": "Atlético de Madrid",
+    "position": "MID",
+    "price": 29666755
+  },
+  {
+    "name": "Griezmann",
+    "team": "Atlético de Madrid",
+    "position": "ATT",
+    "price": 29401177
+  },
+  {
+    "name": "Le Normand",
+    "team": "Atlético de Madrid",
+    "position": "DEF",
+    "price": 28754918
+  },
+  {
+    "name": "R. Araujo",
+    "team": "FC Barcelona",
+    "position": "DEF",
+    "price": 28170283
+  },
+  {
+    "name": "Remiro",
+    "team": "Real Sociedad",
+    "position": "GK",
+    "price": 27456489
+  },
+  {
+    "name": "Riquelme",
+    "team": "Real Betis",
+    "position": "MID",
+    "price": 26738478
+  },
+  {
+    "name": "Johnny",
+    "team": "Atlético de Madrid",
+    "position": "MID",
+    "price": 26507895
+  },
+  {
+    "name": "Carvajal",
+    "team": "Real Madrid",
+    "position": "DEF",
+    "price": 26178381
+  },
+  {
+    "name": "Cardona",
+    "team": "Villarreal CF",
+    "position": "DEF",
+    "price": 25253123
+  },
+  {
+    "name": "Foyth",
+    "team": "Villarreal CF",
+    "position": "DEF",
+    "price": 25219623
+  },
+  {
+    "name": "David Soria",
+    "team": "Getafe CF",
+    "position": "GK",
+    "price": 25113472
+  },
+  {
+    "name": "Hancko",
+    "team": "Atlético de Madrid",
+    "position": "DEF",
+    "price": 25111359
+  },
+  {
+    "name": "Berenguer",
+    "team": "Athletic Club",
+    "position": "ATT",
+    "price": 23418860
+  },
+  {
+    "name": "Mikautadze",
+    "team": "Villarreal CF",
+    "position": "ATT",
+    "price": 22705056
+  },
+  {
+    "name": "Sergio Herrera",
+    "team": "C.A. Osasuna",
+    "position": "GK",
+    "price": 22364561
+  },
+  {
+    "name": "Rüdiger",
+    "team": "Real Madrid",
+    "position": "DEF",
+    "price": 21961964
+  },
+  {
+    "name": "O. Mingueza",
+    "team": "Celta",
+    "position": "DEF",
+    "price": 21944364
+  },
+  {
+    "name": "Javi Guerra",
+    "team": "Valencia CF",
+    "position": "MID",
+    "price": 21397025
+  },
+  {
+    "name": "Iago Aspas",
+    "team": "Celta",
+    "position": "ATT",
+    "price": 21107682
+  },
+  {
+    "name": "L. Milla",
+    "team": "Getafe CF",
+    "position": "MID",
+    "price": 21027543
+  },
+  {
+    "name": "De Frutos",
+    "team": "Rayo Vallecano",
+    "position": "MID",
+    "price": 20973585
+  },
+  {
+    "name": "Etta Eyong",
+    "team": "Levante UD",
+    "position": "ATT",
+    "price": 20899437
+  },
+  {
+    "name": "Rafa Marín",
+    "team": "Villarreal CF",
+    "position": "DEF",
+    "price": 20737255
+  },
+  {
+    "name": "Natan",
+    "team": "Real Betis",
+    "position": "DEF",
+    "price": 20106661
+  },
+  {
+    "name": "Fornals",
+    "team": "Real Betis",
+    "position": "MID",
+    "price": 19844266
+  },
+  {
+    "name": "Muriqi",
+    "team": "RCD Mallorca",
+    "position": "ATT",
+    "price": 19822900
+  },
+  {
+    "name": "Renato Veiga",
+    "team": "Villarreal CF",
+    "position": "DEF",
+    "price": 19294231
+  },
+  {
+    "name": "Brahim",
+    "team": "Real Madrid",
+    "position": "MID",
+    "price": 19250659
+  },
+  {
+    "name": "Gueye",
+    "team": "Villarreal CF",
+    "position": "MID",
+    "price": 19111786
+  },
+  {
+    "name": "Álvaro García",
+    "team": "Rayo Vallecano",
+    "position": "MID",
+    "price": 18471567
+  },
+  {
+    "name": "Mouriño",
+    "team": "Villarreal CF",
+    "position": "DEF",
+    "price": 18336645
+  },
+  {
+    "name": "C. Soler",
+    "team": "Real Sociedad",
+    "position": "MID",
+    "price": 18305263
+  },
+  {
+    "name": "Diego López",
+    "team": "Valencia CF",
+    "position": "ATT",
+    "price": 18254229
+  },
+  {
+    "name": "Gavi",
+    "team": "FC Barcelona",
+    "position": "MID",
+    "price": 18149941
+  },
+  {
+    "name": "Carlos V.",
+    "team": "Deportivo Alavés",
+    "position": "ATT",
+    "price": 17467883
+  },
+  {
+    "name": "A. Moleiro",
+    "team": "Villarreal CF",
+    "position": "MID",
+    "price": 17404732
+  },
+  {
+    "name": "Bryan",
+    "team": "Celta",
+    "position": "ATT",
+    "price": 17315471
+  },
+  {
+    "name": "Júnior R.",
+    "team": "Villarreal CF",
+    "position": "GK",
+    "price": 17078392
+  },
+  {
+    "name": "Eric",
+    "team": "FC Barcelona",
+    "position": "DEF",
+    "price": 17048776
+  },
+  {
+    "name": "Zubeldia",
+    "team": "Real Sociedad",
+    "position": "DEF",
+    "price": 17033462
+  },
+  {
+    "name": "Rodrygo",
+    "team": "Real Madrid",
+    "position": "ATT",
+    "price": 17030203
+  },
+  {
+    "name": "Raba",
+    "team": "Valencia CF",
+    "position": "ATT",
+    "price": 16254824
+  },
+  {
+    "name": "Rioja",
+    "team": "Valencia CF",
+    "position": "MID",
+    "price": 15926512
+  },
+  {
+    "name": "Catena",
+    "team": "C.A. Osasuna",
+    "position": "DEF",
+    "price": 15644685
+  },
+  {
+    "name": "Raíllo",
+    "team": "RCD Mallorca",
+    "position": "DEF",
+    "price": 15537738
+  },
+  {
+    "name": "Buchanan",
+    "team": "Villarreal CF",
+    "position": "MID",
+    "price": 15452021
+  },
+  {
+    "name": "Ratiu",
+    "team": "Rayo Vallecano",
+    "position": "DEF",
+    "price": 15369401
+  },
+  {
+    "name": "Ruggeri",
+    "team": "Atlético de Madrid",
+    "position": "DEF",
+    "price": 15282122
+  },
+  {
+    "name": "Lejeune",
+    "team": "Rayo Vallecano",
+    "position": "DEF",
+    "price": 15279843
+  },
+  {
+    "name": "Brais Méndez",
+    "team": "Real Sociedad",
+    "position": "MID",
+    "price": 15178242
+  },
+  {
+    "name": "Hugo Duro",
+    "team": "Valencia CF",
+    "position": "ATT",
+    "price": 15137907
+  },
+  {
+    "name": "Darder",
+    "team": "RCD Mallorca",
+    "position": "MID",
+    "price": 15130496
+  },
+  {
+    "name": "Aimar",
+    "team": "C.A. Osasuna",
+    "position": "MID",
+    "price": 15119011
+  },
+  {
+    "name": "Boyomo",
+    "team": "C.A. Osasuna",
+    "position": "DEF",
+    "price": 14996905
+  },
+  {
+    "name": "Fermin",
+    "team": "FC Barcelona",
+    "position": "MID",
+    "price": 14358330
+  },
+  {
+    "name": "Paredes",
+    "team": "Athletic Club",
+    "position": "DEF",
+    "price": 13669585
+  },
+  {
+    "name": "Djene",
+    "team": "Getafe CF",
+    "position": "DEF",
+    "price": 13064493
+  },
+  {
+    "name": "Junior",
+    "team": "Real Betis",
+    "position": "DEF",
+    "price": 13057650
+  },
+  {
+    "name": "Agirrezabala",
+    "team": "Valencia CF",
+    "position": "GK",
+    "price": 12950298
+  },
+  {
+    "name": "Tsygankov",
+    "team": "Girona FC",
+    "position": "ATT",
+    "price": 12913715
+  },
+  {
+    "name": "Vitor Reis",
+    "team": "Girona FC",
+    "position": "DEF",
+    "price": 12385109
+  },
+  {
+    "name": "Tárrega",
+    "team": "Valencia CF",
+    "position": "DEF",
+    "price": 12340542
+  },
+  {
+    "name": "Marcos Alonso",
+    "team": "Celta",
+    "position": "DEF",
+    "price": 12123137
+  },
+  {
+    "name": "Á. Valles",
+    "team": "Real Betis",
+    "position": "GK",
+    "price": 12043069
+  },
+  {
+    "name": "Gazzaniga",
+    "team": "Girona FC",
+    "position": "GK",
+    "price": 11827525
+  },
+  {
+    "name": "V. Rosier",
+    "team": "C.A. Osasuna",
+    "position": "DEF",
+    "price": 11720676
+  },
+  {
+    "name": "Rodríguez",
+    "team": "Real Betis",
+    "position": "DEF",
+    "price": 11638399
+  },
+  {
+    "name": "Yuri",
+    "team": "Athletic Club",
+    "position": "DEF",
+    "price": 11485728
+  },
+  {
+    "name": "Gerard",
+    "team": "Villarreal CF",
+    "position": "ATT",
+    "price": 11214417
+  },
+  {
+    "name": "Jauregizar",
+    "team": "Athletic Club",
+    "position": "MID",
+    "price": 11131637
+  },
+  {
+    "name": "Tenaglia",
+    "team": "Deportivo Alavés",
+    "position": "DEF",
+    "price": 11024447
+  },
+  {
+    "name": "J. Mojica",
+    "team": "RCD Mallorca",
+    "position": "DEF",
+    "price": 10390961
+  },
+  {
+    "name": "Pepelu",
+    "team": "Valencia CF",
+    "position": "MID",
+    "price": 10208048
+  },
+  {
+    "name": "Areso",
+    "team": "Athletic Club",
+    "position": "DEF",
+    "price": 10196816
+  },
+  {
+    "name": "Arambarri",
+    "team": "Getafe CF",
+    "position": "MID",
+    "price": 10127790
+  },
+  {
+    "name": "Sivera",
+    "team": "Deportivo Alavés",
+    "position": "GK",
+    "price": 9838195
+  },
+  {
+    "name": "Camavinga",
+    "team": "Real Madrid",
+    "position": "MID",
+    "price": 9792868
+  },
+  {
+    "name": "Guedes",
+    "team": "Real Sociedad",
+    "position": "MID",
+    "price": 9784711
+  },
+  {
+    "name": "Altimira",
+    "team": "Real Betis",
+    "position": "MID",
+    "price": 9701854
+  },
+  {
+    "name": "Barrenetxea",
+    "team": "Real Sociedad",
+    "position": "MID",
+    "price": 9538863
+  },
+  {
+    "name": "Cucho",
+    "team": "Real Betis",
+    "position": "ATT",
+    "price": 9450147
+  },
+  {
+    "name": "Gonzalo",
+    "team": "Real Madrid",
+    "position": "ATT",
+    "price": 9278554
+  },
+  {
+    "name": "Thomas Partey",
+    "team": "Villarreal CF",
+    "position": "MID",
+    "price": 9183791
+  },
+  {
+    "name": "Pablo Torre",
+    "team": "RCD Mallorca",
+    "position": "MID",
+    "price": 9079565
+  },
+  {
+    "name": "A. Batalla",
+    "team": "Rayo Vallecano",
+    "position": "GK",
+    "price": 9003964
+  },
+  {
+    "name": "Conor Gallagher",
+    "team": "Atlético de Madrid",
+    "position": "MID",
+    "price": 8949565
+  },
+  {
+    "name": "Vargas",
+    "team": "Sevilla FC",
+    "position": "ATT",
+    "price": 8824312
+  },
+  {
+    "name": "De Galarreta",
+    "team": "Athletic Club",
+    "position": "MID",
+    "price": 8760098
+  },
+  {
+    "name": "Gayá",
+    "team": "Valencia CF",
+    "position": "DEF",
+    "price": 8735510
+  },
+  {
+    "name": "Bellerín",
+    "team": "Real Betis",
+    "position": "DEF",
+    "price": 8647322
+  },
+  {
+    "name": "Edu Expósito",
+    "team": "RCD Espanyol de Barcelona",
+    "position": "MID",
+    "price": 8618066
+  },
+  {
+    "name": "Aleñá",
+    "team": "Deportivo Alavés",
+    "position": "MID",
+    "price": 8506317
+  },
+  {
+    "name": "Parejo",
+    "team": "Villarreal CF",
+    "position": "MID",
+    "price": 8434820
+  },
+  {
+    "name": "Azpilicueta",
+    "team": "Sevilla FC",
+    "position": "DEF",
+    "price": 8402890
+  },
+  {
+    "name": "Witsel",
+    "team": "Girona FC",
+    "position": "MID",
+    "price": 8333716
+  },
+  {
+    "name": "Ramazani",
+    "team": "Valencia CF",
+    "position": "ATT",
+    "price": 8276075
+  },
+  {
+    "name": "A. Liso",
+    "team": "Getafe CF",
+    "position": "MID",
+    "price": 8261377
+  },
+  {
+    "name": "Danjuma",
+    "team": "Valencia CF",
+    "position": "ATT",
+    "price": 8238494
+  },
+  {
+    "name": "Rubén García",
+    "team": "C.A. Osasuna",
+    "position": "MID",
+    "price": 8111239
+  },
+  {
+    "name": "Dmitrovic",
+    "team": "RCD Espanyol de Barcelona",
+    "position": "GK",
+    "price": 7992419
+  },
+  {
+    "name": "Raspadori",
+    "team": "Atlético de Madrid",
+    "position": "ATT",
+    "price": 7988975
+  },
+  {
+    "name": "Foulquier",
+    "team": "Valencia CF",
+    "position": "DEF",
+    "price": 7853161
+  },
+  {
+    "name": "Ferran Jutglà",
+    "team": "Celta",
+    "position": "ATT",
+    "price": 7798011
+  },
+  {
+    "name": "Aarón",
+    "team": "Real Oviedo",
+    "position": "GK",
+    "price": 7749638
+  },
+  {
+    "name": "A. Abqar",
+    "team": "Getafe CF",
+    "position": "DEF",
+    "price": 7677274
+  },
+  {
+    "name": "Rico",
+    "team": "Getafe CF",
+    "position": "DEF",
+    "price": 7647890
+  },
+  {
+    "name": "Kiko F.",
+    "team": "Getafe CF",
+    "position": "DEF",
+    "price": 7551188
+  },
+  {
+    "name": "Herrera",
+    "team": "Real Sociedad",
+    "position": "MID",
+    "price": 7355653
+  },
+  {
+    "name": "Sergio Gómez",
+    "team": "Real Sociedad",
+    "position": "ATT",
+    "price": 7330151
+  },
+  {
+    "name": "Asencio",
+    "team": "Real Madrid",
+    "position": "DEF",
+    "price": 7143289
+  },
+  {
+    "name": "Alfon",
+    "team": "Sevilla FC",
+    "position": "ATT",
+    "price": 7137135
+  },
+  {
+    "name": "Affengruber",
+    "team": "Elche CF",
+    "position": "DEF",
+    "price": 6951917
+  },
+  {
+    "name": "Daley Blind",
+    "team": "Girona FC",
+    "position": "DEF",
+    "price": 6934927
+  },
+  {
+    "name": "B. Iglesias",
+    "team": "Celta",
+    "position": "ATT",
+    "price": 6925827
+  },
+  {
+    "name": "Rafa Mir",
+    "team": "Elche CF",
+    "position": "ATT",
+    "price": 6769976
+  },
+  {
+    "name": "Valjent",
+    "team": "RCD Mallorca",
+    "position": "DEF",
+    "price": 6767165
+  },
+  {
+    "name": "Guruzeta",
+    "team": "Athletic Club",
+    "position": "ATT",
+    "price": 6715390
+  },
+  {
+    "name": "Pau López",
+    "team": "Real Betis",
+    "position": "GK",
+    "price": 6628097
+  },
+  {
+    "name": "Cabrera",
+    "team": "RCD Espanyol de Barcelona",
+    "position": "DEF",
+    "price": 6476190
+  },
+  {
+    "name": "Leo Román",
+    "team": "RCD Mallorca",
+    "position": "GK",
+    "price": 6443623
+  },
+  {
+    "name": "Blanco",
+    "team": "Deportivo Alavés",
+    "position": "MID",
+    "price": 6365965
+  },
+  {
+    "name": "Pere Milla",
+    "team": "RCD Espanyol de Barcelona",
+    "position": "ATT",
+    "price": 6311488
+  },
+  {
+    "name": "Comesaña",
+    "team": "Villarreal CF",
+    "position": "MID",
+    "price": 6238246
+  },
+  {
+    "name": "Gerard Martín",
+    "team": "FC Barcelona",
+    "position": "DEF",
+    "price": 6215146
+  },
+  {
+    "name": "Juanmi",
+    "team": "Getafe CF",
+    "position": "ATT",
+    "price": 6133184
+  },
+  {
+    "name": "Maroan",
+    "team": "Athletic Club",
+    "position": "ATT",
+    "price": 6116748
+  },
+  {
+    "name": "Agoumé",
+    "team": "Sevilla FC",
+    "position": "MID",
+    "price": 6110355
+  },
+  {
+    "name": "Nyland",
+    "team": "Sevilla FC",
+    "position": "GK",
+    "price": 6075014
+  },
+  {
+    "name": "Fran García",
+    "team": "Real Madrid",
+    "position": "DEF",
+    "price": 6063983
+  },
+  {
+    "name": "Aramburu",
+    "team": "Real Sociedad",
+    "position": "DEF",
+    "price": 5753805
+  },
+  {
+    "name": "Ter Stegen",
+    "team": "FC Barcelona",
+    "position": "GK",
+    "price": 5708963
+  },
+  {
+    "name": "Roberto",
+    "team": "RCD Espanyol de Barcelona",
+    "position": "ATT",
+    "price": 5633755
+  },
+  {
+    "name": "Kike Salas",
+    "team": "Sevilla FC",
+    "position": "DEF",
+    "price": 5580627
+  },
+  {
+    "name": "C. Romero",
+    "team": "RCD Espanyol de Barcelona",
+    "position": "DEF",
+    "price": 5545568
+  },
+  {
+    "name": "Alex Moreno",
+    "team": "Girona FC",
+    "position": "DEF",
+    "price": 5524773
+  },
+  {
+    "name": "Christensen",
+    "team": "FC Barcelona",
+    "position": "DEF",
+    "price": 5523261
+  },
+  {
+    "name": "Koleosho",
+    "team": "RCD Espanyol de Barcelona",
+    "position": "ATT",
+    "price": 5487382
+  },
+  {
+    "name": "Iván Martín",
+    "team": "Girona FC",
+    "position": "MID",
+    "price": 5478020
+  },
+  {
+    "name": "German V.",
+    "team": "Elche CF",
+    "position": "MID",
+    "price": 5451222
+  },
+  {
+    "name": "Sucic",
+    "team": "Real Sociedad",
+    "position": "MID",
+    "price": 5430069
+  },
+  {
+    "name": "Vlachodimos",
+    "team": "Sevilla FC",
+    "position": "GK",
+    "price": 5413733
+  },
+  {
+    "name": "Caleta-Car",
+    "team": "Real Sociedad",
+    "position": "DEF",
+    "price": 5362507
+  },
+  {
+    "name": "Isaac",
+    "team": "Sevilla FC",
+    "position": "ATT",
+    "price": 5221324
+  },
+  {
+    "name": "Ilaix Moriba",
+    "team": "Celta",
+    "position": "MID",
+    "price": 5162997
+  },
+  {
+    "name": "Luiz Felipe",
+    "team": "Rayo Vallecano",
+    "position": "DEF",
+    "price": 5109862
+  },
+  {
+    "name": "Pathé I. Ciss",
+    "team": "Rayo Vallecano",
+    "position": "MID",
+    "price": 5084729
+  },
+  {
+    "name": "M. Dituro",
+    "team": "Elche CF",
+    "position": "GK",
+    "price": 5061852
+  },
+  {
+    "name": "Álvaro",
+    "team": "Elche CF",
+    "position": "ATT",
+    "price": 5054159
+  },
+  {
+    "name": "Szczesny",
+    "team": "FC Barcelona",
+    "position": "GK",
+    "price": 4957587
+  },
+  {
+    "name": "Dendoncker",
+    "team": "Real Oviedo",
+    "position": "MID",
+    "price": 4837997
+  },
+  {
+    "name": "Moi Gómez",
+    "team": "C.A. Osasuna",
+    "position": "MID",
+    "price": 4799001
+  },
+  {
+    "name": "El Hilali",
+    "team": "RCD Espanyol de Barcelona",
+    "position": "DEF",
+    "price": 4778834
+  },
+  {
+    "name": "Oskarsson",
+    "team": "Real Sociedad",
+    "position": "ATT",
+    "price": 4758555
+  },
+  {
+    "name": "J. M. Giménez",
+    "team": "Atlético de Madrid",
+    "position": "DEF",
+    "price": 4758378
+  },
+  {
+    "name": "A. J. Morales",
+    "team": "Levante UD",
+    "position": "ATT",
+    "price": 4690271
+  },
+  {
+    "name": "R.P. Bigas",
+    "team": "Elche CF",
+    "position": "DEF",
+    "price": 4560767
+  },
+  {
+    "name": "Koke",
+    "team": "Atlético de Madrid",
+    "position": "MID",
+    "price": 4522636
+  },
+  {
+    "name": "Kike García",
+    "team": "RCD Espanyol de Barcelona",
+    "position": "ATT",
+    "price": 4473417
+  },
+  {
+    "name": "Aitor Ruibal",
+    "team": "Real Betis",
+    "position": "ATT",
+    "price": 4383307
+  },
+  {
+    "name": "Neyou",
+    "team": "Getafe CF",
+    "position": "MID",
+    "price": 4363441
+  },
+  {
+    "name": "Sadiq",
+    "team": "Real Sociedad",
+    "position": "ATT",
+    "price": 4290243
+  },
+  {
+    "name": "Oluwaseyi",
+    "team": "Villarreal CF",
+    "position": "ATT",
+    "price": 4257392
+  },
+  {
+    "name": "B. Mayoral",
+    "team": "Getafe CF",
+    "position": "ATT",
+    "price": 4228132
+  },
+  {
+    "name": "Akor",
+    "team": "Sevilla FC",
+    "position": "ATT",
+    "price": 4220534
+  },
+  {
+    "name": "David López",
+    "team": "Girona FC",
+    "position": "DEF",
+    "price": 4208484
+  },
+  {
+    "name": "Nelson Deossa",
+    "team": "Real Betis",
+    "position": "MID",
+    "price": 4148580
+  },
+  {
+    "name": "Santamaría",
+    "team": "Valencia CF",
+    "position": "MID",
+    "price": 4135148
+  },
+  {
+    "name": "Mendy",
+    "team": "Sevilla FC",
+    "position": "MID",
+    "price": 4097428
+  },
+  {
+    "name": "Navarro",
+    "team": "Athletic Club",
+    "position": "MID",
+    "price": 4058555
+  },
+  {
+    "name": "Diakhaby",
+    "team": "Valencia CF",
+    "position": "DEF",
+    "price": 3991004
+  },
+  {
+    "name": "Ionut Radu",
+    "team": "Celta",
+    "position": "GK",
+    "price": 3973798
+  },
+  {
+    "name": "Ugrinic",
+    "team": "Valencia CF",
+    "position": "MID",
+    "price": 3953693
+  },
+  {
+    "name": "Lenglet",
+    "team": "Atlético de Madrid",
+    "position": "DEF",
+    "price": 3911166
+  },
+  {
+    "name": "F. Mendy",
+    "team": "Real Madrid",
+    "position": "DEF",
+    "price": 3877762
+  },
+  {
+    "name": "Valentín Gómez",
+    "team": "Real Betis",
+    "position": "DEF",
+    "price": 3851744
+  },
+  {
+    "name": "Llorente ",
+    "team": "Real Betis",
+    "position": "DEF",
+    "price": 3762401
+  },
+  {
+    "name": "Suazo",
+    "team": "Sevilla FC",
+    "position": "DEF",
+    "price": 3758053
+  },
+  {
+    "name": "Cardoso",
+    "team": "Sevilla FC",
+    "position": "DEF",
+    "price": 3749083
+  },
+  {
+    "name": "Dolan",
+    "team": "RCD Espanyol de Barcelona",
+    "position": "ATT",
+    "price": 3745033
+  },
+  {
+    "name": "Moncayola",
+    "team": "C.A. Osasuna",
+    "position": "MID",
+    "price": 3716110
+  },
+  {
+    "name": "Manu Sánchez",
+    "team": "Levante UD",
+    "position": "DEF",
+    "price": 3701999
+  },
+  {
+    "name": "David Carmo",
+    "team": "Real Oviedo",
+    "position": "DEF",
+    "price": 3690977
+  },
+  {
+    "name": "Copete",
+    "team": "Valencia CF",
+    "position": "DEF",
+    "price": 3656126
+  },
+  {
+    "name": "Riedel",
+    "team": "RCD Espanyol de Barcelona",
+    "position": "DEF",
+    "price": 3631823
+  },
+  {
+    "name": "Pablo García",
+    "team": "Real Betis",
+    "position": "ATT",
+    "price": 3617737
+  },
+  {
+    "name": "André Silva",
+    "team": "Elche CF",
+    "position": "ATT",
+    "price": 3604416
+  },
+  {
+    "name": "S. Cazorla",
+    "team": "Real Oviedo",
+    "position": "MID",
+    "price": 3599372
+  },
+  {
+    "name": "Ilyas",
+    "team": "Real Oviedo",
+    "position": "ATT",
+    "price": 3561351
+  },
+  {
+    "name": "Ejuke",
+    "team": "Sevilla FC",
+    "position": "ATT",
+    "price": 3551270
+  },
+  {
+    "name": "M. Casadó",
+    "team": "FC Barcelona",
+    "position": "MID",
+    "price": 3528898
+  },
+  {
+    "name": "Chavarría",
+    "team": "Rayo Vallecano",
+    "position": "DEF",
+    "price": 3526073
+  },
+  {
+    "name": "Dani Rodríguez",
+    "team": "RCD Mallorca",
+    "position": "MID",
+    "price": 3519502
+  },
+  {
+    "name": "Arnau Tenas",
+    "team": "Villarreal CF",
+    "position": "GK",
+    "price": 3509932
+  },
+  {
+    "name": "Jon Martin",
+    "team": "Real Sociedad",
+    "position": "DEF",
+    "price": 3448926
+  },
+  {
+    "name": "Torró",
+    "team": "C.A. Osasuna",
+    "position": "MID",
+    "price": 3434414
+  },
+  {
+    "name": "Lemar",
+    "team": "Girona FC",
+    "position": "MID",
+    "price": 3427126
+  },
+  {
+    "name": "Almeida",
+    "team": "Valencia CF",
+    "position": "MID",
+    "price": 3397616
+  },
+  {
+    "name": "Marín",
+    "team": "Real Sociedad",
+    "position": "MID",
+    "price": 3391166
+  },
+  {
+    "name": "Becker",
+    "team": "C.A. Osasuna",
+    "position": "MID",
+    "price": 3363909
+  },
+  {
+    "name": "Mariano",
+    "team": "Deportivo Alavés",
+    "position": "ATT",
+    "price": 3296419
+  },
+  {
+    "name": "Ez Abde",
+    "team": "Real Betis",
+    "position": "ATT",
+    "price": 3229509
+  },
+  {
+    "name": "Hassan",
+    "team": "Real Oviedo",
+    "position": "MID",
+    "price": 3226334
+  },
+  {
+    "name": "Asprilla",
+    "team": "Girona FC",
+    "position": "ATT",
+    "price": 3170010
+  },
+  {
+    "name": "Gudelj",
+    "team": "Sevilla FC",
+    "position": "MID",
+    "price": 3155452
+  },
+  {
+    "name": "Hugo Sotelo",
+    "team": "Celta",
+    "position": "MID",
+    "price": 3107619
+  },
+  {
+    "name": "Diego Conde",
+    "team": "Villarreal CF",
+    "position": "GK",
+    "price": 3102569
+  },
+  {
+    "name": "Ryan",
+    "team": "Levante UD",
+    "position": "GK",
+    "price": 3072672
+  },
+  {
+    "name": "Unai Lopez",
+    "team": "Rayo Vallecano",
+    "position": "MID",
+    "price": 3043768
+  },
+  {
+    "name": "Jonny Otto",
+    "team": "Deportivo Alavés",
+    "position": "DEF",
+    "price": 2980933
+  },
+  {
+    "name": "R. Terrats",
+    "team": "RCD Espanyol de Barcelona",
+    "position": "MID",
+    "price": 2950244
+  },
+  {
+    "name": "Endrick",
+    "team": "Real Madrid",
+    "position": "ATT",
+    "price": 2940380
+  },
+  {
+    "name": "Marc Pubill",
+    "team": "Atlético de Madrid",
+    "position": "DEF",
+    "price": 2935614
+  },
+  {
+    "name": "Starfelt",
+    "team": "Celta",
+    "position": "DEF",
+    "price": 2918103
+  },
+  {
+    "name": "Dimitrievski",
+    "team": "Valencia CF",
+    "position": "GK",
+    "price": 2917084
+  },
+  {
+    "name": "Fran Beltrán",
+    "team": "Celta",
+    "position": "MID",
+    "price": 2901108
+  },
+  {
+    "name": "P. Campos",
+    "team": "Levante UD",
+    "position": "GK",
+    "price": 2899807
+  },
+  {
+    "name": "Gorosabel",
+    "team": "Athletic Club",
+    "position": "DEF",
+    "price": 2898487
+  },
+  {
+    "name": "Thierry Correia",
+    "team": "Valencia CF",
+    "position": "DEF",
+    "price": 2858863
+  },
+  {
+    "name": "Januzaj",
+    "team": "Sevilla FC",
+    "position": "MID",
+    "price": 2851101
+  },
+  {
+    "name": "Lucas Boyé",
+    "team": "Deportivo Alavés",
+    "position": "ATT",
+    "price": 2848650
+  },
+  {
+    "name": "Javi Galán",
+    "team": "Atlético de Madrid",
+    "position": "DEF",
+    "price": 2846811
+  },
+  {
+    "name": "Guridi",
+    "team": "Deportivo Alavés",
+    "position": "MID",
+    "price": 2837410
+  },
+  {
+    "name": "Alaba",
+    "team": "Real Madrid",
+    "position": "DEF",
+    "price": 2828840
+  },
+  {
+    "name": "Koyalipou",
+    "team": "Levante UD",
+    "position": "ATT",
+    "price": 2710985
+  },
+  {
+    "name": "Ibañez",
+    "team": "Deportivo Alavés",
+    "position": "MID",
+    "price": 2689829
+  },
+  {
+    "name": "Javi Rueda",
+    "team": "Celta",
+    "position": "DEF",
+    "price": 2675934
+  },
+  {
+    "name": "Álex Sancris",
+    "team": "Getafe CF",
+    "position": "ATT",
+    "price": 2659885
+  },
+  {
+    "name": "Mateo Joseph",
+    "team": "RCD Mallorca",
+    "position": "ATT",
+    "price": 2614959
+  },
+  {
+    "name": "Redondo",
+    "team": "Elche CF",
+    "position": "MID",
+    "price": 2605625
+  },
+  {
+    "name": "R. Mendoza",
+    "team": "Elche CF",
+    "position": "MID",
+    "price": 2557581
+  },
+  {
+    "name": "J. Vázquez",
+    "team": "Valencia CF",
+    "position": "DEF",
+    "price": 2529773
+  },
+  {
+    "name": "Javi Muñoz",
+    "team": "Getafe CF",
+    "position": "MID",
+    "price": 2481443
+  },
+  {
+    "name": "F. Viñas",
+    "team": "Real Oviedo",
+    "position": "ATT",
+    "price": 2472564
+  },
+  {
+    "name": "Víctor Muñoz",
+    "team": "C.A. Osasuna",
+    "position": "ATT",
+    "price": 2465219
+  },
+  {
+    "name": "Joel Roca",
+    "team": "Girona FC",
+    "position": "ATT",
+    "price": 2441986
+  },
+  {
+    "name": "Marc Bernal",
+    "team": "FC Barcelona",
+    "position": "MID",
+    "price": 2434869
+  },
+  {
+    "name": "Jan Virgili",
+    "team": "RCD Mallorca",
+    "position": "ATT",
+    "price": 2433151
+  },
+  {
+    "name": "Maffeo",
+    "team": "RCD Mallorca",
+    "position": "DEF",
+    "price": 2423025
+  },
+  {
+    "name": "A. Pedraza",
+    "team": "Villarreal CF",
+    "position": "DEF",
+    "price": 2422081
+  },
+  {
+    "name": "Hugo Alvarez",
+    "team": "Celta",
+    "position": "MID",
+    "price": 2370168
+  },
+  {
+    "name": "Alan Matturro",
+    "team": "Levante UD",
+    "position": "DEF",
+    "price": 2363310
+  },
+  {
+    "name": "D. Ceballos",
+    "team": "Real Madrid",
+    "position": "MID",
+    "price": 2359857
+  },
+  {
+    "name": "Juanlu",
+    "team": "Sevilla FC",
+    "position": "MID",
+    "price": 2345273
+  },
+  {
+    "name": "Jeremy Toljan",
+    "team": "Levante UD",
+    "position": "DEF",
+    "price": 2337870
+  },
+  {
+    "name": "Nacho Vidal",
+    "team": "Real Oviedo",
+    "position": "DEF",
+    "price": 2334125
+  },
+  {
+    "name": "Sow",
+    "team": "Sevilla FC",
+    "position": "MID",
+    "price": 2327624
+  },
+  {
+    "name": "Martim Neto",
+    "team": "Elche CF",
+    "position": "MID",
+    "price": 2316668
+  },
+  {
+    "name": "Juan Iglesias",
+    "team": "Getafe CF",
+    "position": "DEF",
+    "price": 2311890
+  },
+  {
+    "name": "Trejo",
+    "team": "Rayo Vallecano",
+    "position": "MID",
+    "price": 2301639
+  },
+  {
+    "name": "Lunin",
+    "team": "Real Madrid",
+    "position": "GK",
+    "price": 2291034
+  },
+  {
+    "name": "T. Martinez",
+    "team": "Deportivo Alavés",
+    "position": "ATT",
+    "price": 2277931
+  },
+  {
+    "name": "Molina",
+    "team": "Atlético de Madrid",
+    "position": "DEF",
+    "price": 2268634
+  },
+  {
+    "name": "Brekalo",
+    "team": "Real Oviedo",
+    "position": "MID",
+    "price": 2241622
+  },
+  {
+    "name": "Álvaro Nuñez",
+    "team": "Elche CF",
+    "position": "DEF",
+    "price": 2210697
+  },
+  {
+    "name": "Marc Roca",
+    "team": "Real Betis",
+    "position": "MID",
+    "price": 2176742
+  },
+  {
+    "name": "Stuani",
+    "team": "Girona FC",
+    "position": "ATT",
+    "price": 2174601
+  },
+  {
+    "name": "F. Garcés",
+    "team": "Deportivo Alavés",
+    "position": "DEF",
+    "price": 2171530
+  },
+  {
+    "name": "Carmona",
+    "team": "Sevilla FC",
+    "position": "DEF",
+    "price": 2150579
+  },
+  {
+    "name": "Turrientes",
+    "team": "Real Sociedad",
+    "position": "MID",
+    "price": 2138494
+  },
+  {
+    "name": "Pickel",
+    "team": "RCD Espanyol de Barcelona",
+    "position": "MID",
+    "price": 2133343
+  },
+  {
+    "name": "Chimy Ávila",
+    "team": "Real Betis",
+    "position": "ATT",
+    "price": 2127076
+  },
+  {
+    "name": "P. Martínez",
+    "team": "Levante UD",
+    "position": "MID",
+    "price": 2101614
+  },
+  {
+    "name": "Camello",
+    "team": "Rayo Vallecano",
+    "position": "ATT",
+    "price": 2092008
+  },
+  {
+    "name": "Arnau",
+    "team": "Girona FC",
+    "position": "DEF",
+    "price": 2085189
+  },
+  {
+    "name": "Kumbulla",
+    "team": "RCD Mallorca",
+    "position": "DEF",
+    "price": 2080228
+  },
+  {
+    "name": "I. Lekue",
+    "team": "Athletic Club",
+    "position": "DEF",
+    "price": 2064226
+  },
+  {
+    "name": "Urko",
+    "team": "RCD Espanyol de Barcelona",
+    "position": "DEF",
+    "price": 2039191
+  },
+  {
+    "name": "Pedro Díaz",
+    "team": "Rayo Vallecano",
+    "position": "MID",
+    "price": 2037037
+  },
+  {
+    "name": "Arriaga",
+    "team": "Levante UD",
+    "position": "MID",
+    "price": 2034124
+  },
+  {
+    "name": "I. Romero",
+    "team": "Levante UD",
+    "position": "ATT",
+    "price": 2023139
+  },
+  {
+    "name": "Juan Cruz",
+    "team": "C.A. Osasuna",
+    "position": "DEF",
+    "price": 2012519
+  },
+  {
+    "name": "Zakharyan",
+    "team": "Real Sociedad",
+    "position": "MID",
+    "price": 2006323
+  },
+  {
+    "name": "Morey",
+    "team": "RCD Mallorca",
+    "position": "DEF",
+    "price": 2003014
+  },
+  {
+    "name": "Gorrotxa",
+    "team": "Real Sociedad",
+    "position": "MID",
+    "price": 1986727
+  },
+  {
+    "name": "Balliu",
+    "team": "Rayo Vallecano",
+    "position": "DEF",
+    "price": 1980433
+  },
+  {
+    "name": "Samu Costa",
+    "team": "RCD Mallorca",
+    "position": "MID",
+    "price": 1968670
+  },
+  {
+    "name": "Bakambu",
+    "team": "Real Betis",
+    "position": "ATT",
+    "price": 1924541
+  },
+  {
+    "name": "Miguel Rubio",
+    "team": "RCD Espanyol de Barcelona",
+    "position": "DEF",
+    "price": 1829671
+  },
+  {
+    "name": "E. Bailly",
+    "team": "Real Oviedo",
+    "position": "DEF",
+    "price": 1791960
+  },
+  {
+    "name": "A. Alti",
+    "team": "Villarreal CF",
+    "position": "DEF",
+    "price": 1729628
+  },
+  {
+    "name": "Á. Ortiz",
+    "team": "Real Betis",
+    "position": "DEF",
+    "price": 1709695
+  },
+  {
+    "name": "Asano",
+    "team": "RCD Mallorca",
+    "position": "ATT",
+    "price": 1708873
+  },
+  {
+    "name": "Aihen",
+    "team": "Real Sociedad",
+    "position": "DEF",
+    "price": 1701762
+  },
+  {
+    "name": "Ilic",
+    "team": "Real Oviedo",
+    "position": "MID",
+    "price": 1700316
+  },
+  {
+    "name": "Davinchi",
+    "team": "Getafe CF",
+    "position": "DEF",
+    "price": 1695137
+  },
+  {
+    "name": "Guevara",
+    "team": "Deportivo Alavés",
+    "position": "MID",
+    "price": 1686083
+  },
+  {
+    "name": "Sibo",
+    "team": "Real Oviedo",
+    "position": "MID",
+    "price": 1679022
+  },
+  {
+    "name": "Rondón",
+    "team": "Real Oviedo",
+    "position": "ATT",
+    "price": 1650369
+  },
+  {
+    "name": "Iñaki Peña",
+    "team": "Elche CF",
+    "position": "GK",
+    "price": 1638834
+  },
+  {
+    "name": "Van De Beek",
+    "team": "Girona FC",
+    "position": "MID",
+    "price": 1635803
+  },
+  {
+    "name": "A. Ferllo",
+    "team": "Sevilla FC",
+    "position": "GK",
+    "price": 1634380
+  },
+  {
+    "name": "F. Calero",
+    "team": "RCD Espanyol de Barcelona",
+    "position": "DEF",
+    "price": 1612734
+  },
+  {
+    "name": "Pacheco",
+    "team": "Deportivo Alavés",
+    "position": "DEF",
+    "price": 1574969
+  },
+  {
+    "name": "Aidoo Jr",
+    "team": "Celta",
+    "position": "DEF",
+    "price": 1573313
+  },
+  {
+    "name": "I. Akhomach",
+    "team": "Villarreal CF",
+    "position": "ATT",
+    "price": 1554988
+  },
+  {
+    "name": "Mario Martín",
+    "team": "Getafe CF",
+    "position": "MID",
+    "price": 1516158
+  },
+  {
+    "name": "Matías Moreno",
+    "team": "Levante UD",
+    "position": "DEF",
+    "price": 1505011
+  },
+  {
+    "name": "Portu",
+    "team": "Girona FC",
+    "position": "ATT",
+    "price": 1490127
+  },
+  {
+    "name": "Colombatto",
+    "team": "Real Oviedo",
+    "position": "MID",
+    "price": 1481675
+  },
+  {
+    "name": "Fran Pérez",
+    "team": "Rayo Vallecano",
+    "position": "MID",
+    "price": 1477355
+  },
+  {
+    "name": "R. Brugué",
+    "team": "Levante UD",
+    "position": "ATT",
+    "price": 1474035
+  },
+  {
+    "name": "Protesoni",
+    "team": "Deportivo Alavés",
+    "position": "MID",
+    "price": 1464072
+  },
+  {
+    "name": "Pol Lozano",
+    "team": "RCD Espanyol de Barcelona",
+    "position": "MID",
+    "price": 1439362
+  },
+  {
+    "name": "Febas",
+    "team": "Elche CF",
+    "position": "MID",
+    "price": 1433128
+  },
+  {
+    "name": "Raúl",
+    "team": "C.A. Osasuna",
+    "position": "ATT",
+    "price": 1415321
+  },
+  {
+    "name": "A. Castrín",
+    "team": "Sevilla FC",
+    "position": "DEF",
+    "price": 1412863
+  },
+  {
+    "name": "Iker Losada",
+    "team": "Levante UD",
+    "position": "ATT",
+    "price": 1403131
+  },
+  {
+    "name": "Prados",
+    "team": "Athletic Club",
+    "position": "MID",
+    "price": 1401342
+  },
+  {
+    "name": "Kambwala",
+    "team": "Villarreal CF",
+    "position": "DEF",
+    "price": 1394698
+  },
+  {
+    "name": "Gumbau",
+    "team": "Rayo Vallecano",
+    "position": "MID",
+    "price": 1391127
+  },
+  {
+    "name": "Jordán",
+    "team": "Sevilla FC",
+    "position": "MID",
+    "price": 1367914
+  },
+  {
+    "name": "Dani Calvo",
+    "team": "Real Oviedo",
+    "position": "DEF",
+    "price": 1359658
+  },
+  {
+    "name": "Williot",
+    "team": "Celta",
+    "position": "MID",
+    "price": 1355854
+  },
+  {
+    "name": "Padilla",
+    "team": "Athletic Club",
+    "position": "GK",
+    "price": 1335223
+  },
+  {
+    "name": "Herrando",
+    "team": "C.A. Osasuna",
+    "position": "DEF",
+    "price": 1333067
+  },
+  {
+    "name": "A. Reina",
+    "team": "Real Oviedo",
+    "position": "MID",
+    "price": 1331855
+  },
+  {
+    "name": "Peque",
+    "team": "Sevilla FC",
+    "position": "ATT",
+    "price": 1313750
+  },
+  {
+    "name": "Aritz",
+    "team": "Real Sociedad",
+    "position": "DEF",
+    "price": 1311629
+  },
+  {
+    "name": "A. Rahim",
+    "team": "Real Oviedo",
+    "position": "DEF",
+    "price": 1307487
+  },
+  {
+    "name": "Pacha",
+    "team": "Rayo Vallecano",
+    "position": "DEF",
+    "price": 1301000
+  },
+  {
+    "name": "Costa",
+    "team": "Villarreal CF",
+    "position": "DEF",
+    "price": 1278598
+  },
+  {
+    "name": "V. Chust",
+    "team": "Elche CF",
+    "position": "DEF",
+    "price": 1272393
+  },
+  {
+    "name": "Dro",
+    "team": "FC Barcelona",
+    "position": "MID",
+    "price": 1245262
+  },
+  {
+    "name": "Abel Ruiz",
+    "team": "Girona FC",
+    "position": "ATT",
+    "price": 1241283
+  },
+  {
+    "name": "C. Alvarez",
+    "team": "Levante UD",
+    "position": "MID",
+    "price": 1226398
+  },
+  {
+    "name": "Javi López",
+    "team": "Real Oviedo",
+    "position": "DEF",
+    "price": 1215406
+  },
+  {
+    "name": "O. Rey",
+    "team": "Levante UD",
+    "position": "MID",
+    "price": 1214322
+  },
+  {
+    "name": "Óscar Valentín",
+    "team": "Rayo Vallecano",
+    "position": "MID",
+    "price": 1201944
+  },
+  {
+    "name": "Izeta",
+    "team": "Athletic Club",
+    "position": "ATT",
+    "price": 1164483
+  },
+  {
+    "name": "Denis Suárez",
+    "team": "Deportivo Alavés",
+    "position": "MID",
+    "price": 1155074
+  },
+  {
+    "name": "Pedrosa",
+    "team": "Elche CF",
+    "position": "DEF",
+    "price": 1146446
+  },
+  {
+    "name": "Jofre",
+    "team": "RCD Espanyol de Barcelona",
+    "position": "ATT",
+    "price": 1137451
+  },
+  {
+    "name": "Karrikaburu",
+    "team": "Real Sociedad",
+    "position": "ATT",
+    "price": 1131386
+  },
+  {
+    "name": "Nteka",
+    "team": "Rayo Vallecano",
+    "position": "ATT",
+    "price": 1130491
+  },
+  {
+    "name": "Lucas",
+    "team": "Real Oviedo",
+    "position": "DEF",
+    "price": 1119842
+  },
+  {
+    "name": "Carreira",
+    "team": "Celta",
+    "position": "DEF",
+    "price": 1115904
+  },
+  {
+    "name": "Nico Serrano",
+    "team": "Athletic Club",
+    "position": "ATT",
+    "price": 1095164
+  },
+  {
+    "name": "Morlanes",
+    "team": "RCD Mallorca",
+    "position": "MID",
+    "price": 1094485
+  },
+  {
+    "name": "Vesga",
+    "team": "Athletic Club",
+    "position": "MID",
+    "price": 1093212
+  },
+  {
+    "name": "Juan Carlos",
+    "team": "Girona FC",
+    "position": "GK",
+    "price": 1090956
+  },
+  {
+    "name": "M. Aguado",
+    "team": "Elche CF",
+    "position": "MID",
+    "price": 1081827
+  },
+  {
+    "name": "El-Abdellaoui",
+    "team": "Celta",
+    "position": "ATT",
+    "price": 1071958
+  },
+  {
+    "name": "Pau Navarro",
+    "team": "Villarreal CF",
+    "position": "DEF",
+    "price": 1067612
+  },
+  {
+    "name": "Moldovan",
+    "team": "Real Oviedo",
+    "position": "GK",
+    "price": 1061450
+  },
+  {
+    "name": "Antonio Sánchez",
+    "team": "RCD Mallorca",
+    "position": "MID",
+    "price": 1052507
+  },
+  {
+    "name": "A. Houary",
+    "team": "Elche CF",
+    "position": "ATT",
+    "price": 1052326
+  },
+  {
+    "name": "Calebe",
+    "team": "Deportivo Alavés",
+    "position": "MID",
+    "price": 1051789
+  },
+  {
+    "name": "Cömert",
+    "team": "Valencia CF",
+    "position": "DEF",
+    "price": 1022878
+  },
+  {
+    "name": "Ismael",
+    "team": "Getafe CF",
+    "position": "DEF",
+    "price": 1002193
+  },
+  {
+    "name": "Aitor Fdez",
+    "team": "C.A. Osasuna",
+    "position": "GK",
+    "price": 986196
+  },
+  {
+    "name": "H. Rincón",
+    "team": "Girona FC",
+    "position": "DEF",
+    "price": 983398
+  },
+  {
+    "name": "Odriozola",
+    "team": "Real Sociedad",
+    "position": "DEF",
+    "price": 978398
+  },
+  {
+    "name": "David Costas",
+    "team": "Real Oviedo",
+    "position": "DEF",
+    "price": 970416
+  },
+  {
+    "name": "Abel Bretones",
+    "team": "C.A. Osasuna",
+    "position": "DEF",
+    "price": 970194
+  },
+  {
+    "name": "M. Narváez",
+    "team": "Real Oviedo",
+    "position": "GK",
+    "price": 969521
+  },
+  {
+    "name": "Víctor G.",
+    "team": "Levante UD",
+    "position": "DEF",
+    "price": 952803
+  },
+  {
+    "name": "Abdón",
+    "team": "RCD Mallorca",
+    "position": "ATT",
+    "price": 948346
+  },
+  {
+    "name": "Iker Muñoz",
+    "team": "C.A. Osasuna",
+    "position": "MID",
+    "price": 931922
+  },
+  {
+    "name": "Mascarell",
+    "team": "RCD Mallorca",
+    "position": "MID",
+    "price": 931018
+  },
+  {
+    "name": "Damian",
+    "team": "Celta",
+    "position": "MID",
+    "price": 918907
+  },
+  {
+    "name": "V. Parada",
+    "team": "Deportivo Alavés",
+    "position": "DEF",
+    "price": 909103
+  },
+  {
+    "name": "Francés",
+    "team": "Girona FC",
+    "position": "DEF",
+    "price": 904538
+  },
+  {
+    "name": "Salinas",
+    "team": "RCD Espanyol de Barcelona",
+    "position": "DEF",
+    "price": 904201
+  },
+  {
+    "name": "Vencedor",
+    "team": "Levante UD",
+    "position": "MID",
+    "price": 901632
+  },
+  {
+    "name": "Unai G.",
+    "team": "Athletic Club",
+    "position": "MID",
+    "price": 901382
+  },
+  {
+    "name": "Azzedine ",
+    "team": "Girona FC",
+    "position": "MID",
+    "price": 895935
+  },
+  {
+    "name": "Josan",
+    "team": "Elche CF",
+    "position": "MID",
+    "price": 892055
+  },
+  {
+    "name": "Iván Villar",
+    "team": "Celta",
+    "position": "GK",
+    "price": 840275
+  },
+  {
+    "name": "Léo Pétrot",
+    "team": "Elche CF",
+    "position": "DEF",
+    "price": 835048
+  },
+  {
+    "name": "Kike Barja",
+    "team": "C.A. Osasuna",
+    "position": "ATT",
+    "price": 819743
+  },
+  {
+    "name": "Cabello",
+    "team": "Levante UD",
+    "position": "DEF",
+    "price": 815051
+  },
+  {
+    "name": "A. Primo",
+    "team": "Levante UD",
+    "position": "GK",
+    "price": 807393
+  },
+  {
+    "name": "Nikola Maraš",
+    "team": "Deportivo Alavés",
+    "position": "DEF",
+    "price": 804690
+  },
+  {
+    "name": "Franco Cervi",
+    "team": "Celta",
+    "position": "ATT",
+    "price": 792645
+  },
+  {
+    "name": "Olasagasti",
+    "team": "Levante UD",
+    "position": "MID",
+    "price": 783453
+  },
+  {
+    "name": "A. Rebbach",
+    "team": "Deportivo Alavés",
+    "position": "ATT",
+    "price": 783446
+  },
+  {
+    "name": "Nianzou",
+    "team": "Sevilla FC",
+    "position": "DEF",
+    "price": 773128
+  },
+  {
+    "name": "I. Benito",
+    "team": "C.A. Osasuna",
+    "position": "ATT",
+    "price": 764386
+  },
+  {
+    "name": "A. Mumin",
+    "team": "Rayo Vallecano",
+    "position": "DEF",
+    "price": 743238
+  },
+  {
+    "name": "Elgezabal",
+    "team": "Levante UD",
+    "position": "DEF",
+    "price": 740780
+  },
+  {
+    "name": "J. Vertrouwd",
+    "team": "Rayo Vallecano",
+    "position": "DEF",
+    "price": 739891
+  },
+  {
+    "name": "Rego",
+    "team": "Athletic Club",
+    "position": "DEF",
+    "price": 738986
+  },
+  {
+    "name": "Brandon Dominguès",
+    "team": "Real Oviedo",
+    "position": "MID",
+    "price": 709415
+  },
+  {
+    "name": "Adrián",
+    "team": "Real Betis",
+    "position": "GK",
+    "price": 707734
+  },
+  {
+    "name": "A. Fortuño",
+    "team": "RCD Espanyol de Barcelona",
+    "position": "GK",
+    "price": 696566
+  },
+  {
+    "name": "Carlos M.",
+    "team": "Atlético de Madrid",
+    "position": "MID",
+    "price": 688261
+  },
+  {
+    "name": "Toni Lato",
+    "team": "RCD Mallorca",
+    "position": "DEF",
+    "price": 687076
+  },
+  {
+    "name": "Domingos Duarte",
+    "team": "Getafe CF",
+    "position": "DEF",
+    "price": 670558
+  },
+  {
+    "name": "Javi Rodríguez",
+    "team": "Celta",
+    "position": "DEF",
+    "price": 669061
+  },
+  {
+    "name": "Mourad",
+    "team": "Elche CF",
+    "position": "ATT",
+    "price": 659478
+  },
+  {
+    "name": "Bergstrom",
+    "team": "RCD Mallorca",
+    "position": "GK",
+    "price": 658752
+  },
+  {
+    "name": "J. Musso",
+    "team": "Atlético de Madrid",
+    "position": "GK",
+    "price": 646991
+  },
+  {
+    "name": "Moussa Diarra",
+    "team": "Deportivo Alavés",
+    "position": "DEF",
+    "price": 644233
+  },
+  {
+    "name": "C. Espí",
+    "team": "Levante UD",
+    "position": "ATT",
+    "price": 634485
+  },
+  {
+    "name": "Manuel Fernández",
+    "team": "Celta",
+    "position": "DEF",
+    "price": 631832
+  },
+  {
+    "name": "John C.",
+    "team": "Elche CF",
+    "position": "DEF",
+    "price": 622980
+  },
+  {
+    "name": "Marc Vidal",
+    "team": "Celta",
+    "position": "GK",
+    "price": 621611
+  },
+  {
+    "name": "Luengo",
+    "team": "Real Oviedo",
+    "position": "DEF",
+    "price": 619160
+  },
+  {
+    "name": "Cuéllar",
+    "team": "RCD Mallorca",
+    "position": "GK",
+    "price": 616508
+  },
+  {
+    "name": "Dela",
+    "team": "Levante UD",
+    "position": "DEF",
+    "price": 594938
+  },
+  {
+    "name": "David López",
+    "team": "RCD Mallorca",
+    "position": "DEF",
+    "price": 587149
+  },
+  {
+    "name": "Albert",
+    "team": "Elche CF",
+    "position": "DEF",
+    "price": 584300
+  },
+  {
+    "name": "Paco Cortes",
+    "team": "Levante UD",
+    "position": "ATT",
+    "price": 582526
+  },
+  {
+    "name": "Omar Falah",
+    "team": "Real Oviedo",
+    "position": "DEF",
+    "price": 582526
+  },
+  {
+    "name": "Manu Bueno",
+    "team": "Sevilla FC",
+    "position": "MID",
+    "price": 582526
+  },
+  {
+    "name": "Folgado",
+    "team": "Real Sociedad",
+    "position": "GK",
+    "price": 581197
+  },
+  {
+    "name": "Germán",
+    "team": "Real Betis",
+    "position": "GK",
+    "price": 581197
+  },
+  {
+    "name": "Adama",
+    "team": "Athletic Club",
+    "position": "DEF",
+    "price": 579404
+  },
+  {
+    "name": "C. Dominguez",
+    "team": "Celta",
+    "position": "DEF",
+    "price": 579365
+  },
+  {
+    "name": "Pablo Durán",
+    "team": "Celta",
+    "position": "ATT",
+    "price": 563633
+  },
+  {
+    "name": "Javi Llabrés",
+    "team": "RCD Mallorca",
+    "position": "ATT",
+    "price": 562113
+  },
+  {
+    "name": "Letacek",
+    "team": "Getafe CF",
+    "position": "GK",
+    "price": 560416
+  },
+  {
+    "name": "Diego Aguado",
+    "team": "Real Madrid",
+    "position": "DEF",
+    "price": 556850
+  },
+  {
+    "name": "Diaby",
+    "team": "Elche CF",
+    "position": "DEF",
+    "price": 533471
+  },
+  {
+    "name": "Marco Esteban",
+    "team": "Real Oviedo",
+    "position": "DEF",
+    "price": 530567
+  },
+  {
+    "name": "Marcao",
+    "team": "Sevilla FC",
+    "position": "DEF",
+    "price": 530289
+  },
+  {
+    "name": "Fortea",
+    "team": "Real Madrid",
+    "position": "DEF",
+    "price": 516365
+  },
+  {
+    "name": "Youssef",
+    "team": "Deportivo Alavés",
+    "position": "DEF",
+    "price": 510107
+  },
+  {
+    "name": "Thiago Pitarch",
+    "team": "Real Madrid",
+    "position": "MID",
+    "price": 504438
+  },
+  {
+    "name": "C. Rivero",
+    "team": "Valencia CF",
+    "position": "GK",
+    "price": 494642
+  },
+  {
+    "name": "D. Cárdenas",
+    "team": "Rayo Vallecano",
+    "position": "GK",
+    "price": 490106
+  },
+  {
+    "name": "A. Fores",
+    "team": "Real Oviedo",
+    "position": "ATT",
+    "price": 487636
+  },
+  {
+    "name": "A. Iturbe",
+    "team": "Elche CF",
+    "position": "GK",
+    "price": 483567
+  },
+  {
+    "name": "Alex Costa",
+    "team": "Sevilla FC",
+    "position": "ATT",
+    "price": 483178
+  },
+  {
+    "name": "D. Pérez",
+    "team": "Real Betis",
+    "position": "MID",
+    "price": 478732
+  },
+  {
+    "name": "Pampin",
+    "team": "Levante UD",
+    "position": "MID",
+    "price": 478606
+  },
+  {
+    "name": "Ejaria",
+    "team": "Real Oviedo",
+    "position": "ATT",
+    "price": 478606
+  },
+  {
+    "name": "Lamine Gueye",
+    "team": "Real Oviedo",
+    "position": "ATT",
+    "price": 478606
+  },
+  {
+    "name": "Rubén S.",
+    "team": "RCD Espanyol de Barcelona",
+    "position": "MID",
+    "price": 475719
+  },
+  {
+    "name": "Raúl Fernández",
+    "team": "Deportivo Alavés",
+    "position": "GK",
+    "price": 475020
+  },
+  {
+    "name": "Joan Ruiz",
+    "team": "Levante UD",
+    "position": "MID",
+    "price": 471045
+  },
+  {
+    "name": "Marrero",
+    "team": "Real Sociedad",
+    "position": "GK",
+    "price": 463076
+  },
+  {
+    "name": "Jhon Solis",
+    "team": "Girona FC",
+    "position": "MID",
+    "price": 463047
+  },
+  {
+    "name": "Y. Santiago",
+    "team": "Elche CF",
+    "position": "MID",
+    "price": 453517
+  },
+  {
+    "name": "Miguel Sierra",
+    "team": "Sevilla FC",
+    "position": "ATT",
+    "price": 443186
+  },
+  {
+    "name": "Alberto F.",
+    "team": "Sevilla FC",
+    "position": "GK",
+    "price": 443186
+  },
+  {
+    "name": "Kostis",
+    "team": "Atlético de Madrid",
+    "position": "DEF",
+    "price": 439933
+  },
+  {
+    "name": "Guille Fernández",
+    "team": "FC Barcelona",
+    "position": "MID",
+    "price": 432141
+  },
+  {
+    "name": "Krapyvtsov",
+    "team": "Girona FC",
+    "position": "GK",
+    "price": 429162
+  },
+  {
+    "name": "Kochen",
+    "team": "FC Barcelona",
+    "position": "GK",
+    "price": 428341
+  },
+  {
+    "name": "Toni Fernández",
+    "team": "FC Barcelona",
+    "position": "ATT",
+    "price": 427672
+  },
+  {
+    "name": "Risco",
+    "team": "Getafe CF",
+    "position": "MID",
+    "price": 426649
+  },
+  {
+    "name": "Otorbi",
+    "team": "Valencia CF",
+    "position": "ATT",
+    "price": 426649
+  },
+  {
+    "name": "Domenech",
+    "team": "RCD Mallorca",
+    "position": "ATT",
+    "price": 426649
+  },
+  {
+    "name": "Cabanes",
+    "team": "Villarreal CF",
+    "position": "ATT",
+    "price": 426649
+  },
+  {
+    "name": "Mawuli",
+    "team": "Real Betis",
+    "position": "MID",
+    "price": 425948
+  },
+  {
+    "name": "Mestre",
+    "team": "Real Madrid",
+    "position": "GK",
+    "price": 415604
+  },
+  {
+    "name": "Yoel Lago",
+    "team": "Celta",
+    "position": "DEF",
+    "price": 414386
+  },
+  {
+    "name": "Fran González",
+    "team": "Real Madrid",
+    "position": "GK",
+    "price": 399498
+  },
+  {
+    "name": "Jon De Luis",
+    "team": "Athletic Club",
+    "position": "DEF",
+    "price": 398991
+  },
+  {
+    "name": "Iván",
+    "team": "Real Betis",
+    "position": "MID",
+    "price": 398991
+  },
+  {
+    "name": "Vilaplana",
+    "team": "Getafe CF",
+    "position": "DEF",
+    "price": 398991
+  },
+  {
+    "name": "Martin Krug",
+    "team": "Levante UD",
+    "position": "DEF",
+    "price": 398991
+  },
+  {
+    "name": "Nacho Perez",
+    "team": "Levante UD",
+    "position": "DEF",
+    "price": 398991
+  },
+  {
+    "name": "Edu Altozano",
+    "team": "Sevilla FC",
+    "position": "MID",
+    "price": 398991
+  },
+  {
+    "name": "De Las Sias",
+    "team": "Rayo Vallecano",
+    "position": "DEF",
+    "price": 398511
+  },
+  {
+    "name": "Montero",
+    "team": "Deportivo Alavés",
+    "position": "GK",
+    "price": 396877
+  },
+  {
+    "name": "Ristic",
+    "team": "Celta",
+    "position": "DEF",
+    "price": 382753
+  },
+  {
+    "name": "Mauro",
+    "team": "C.A. Osasuna",
+    "position": "MID",
+    "price": 382690
+  },
+  {
+    "name": "Salhi",
+    "team": "RCD Mallorca",
+    "position": "DEF",
+    "price": 379868
+  },
+  {
+    "name": "Aimar Blázquez",
+    "team": "Valencia CF",
+    "position": "ATT",
+    "price": 376703
+  },
+  {
+    "name": "Joselu",
+    "team": "Getafe CF",
+    "position": "ATT",
+    "price": 374688
+  },
+  {
+    "name": "Becerra",
+    "team": "Rayo Vallecano",
+    "position": "MID",
+    "price": 374688
+  },
+  {
+    "name": "Rubo",
+    "team": "Valencia CF",
+    "position": "DEF",
+    "price": 374688
+  },
+  {
+    "name": "Coba",
+    "team": "Getafe CF",
+    "position": "MID",
+    "price": 361913
+  },
+  {
+    "name": "Adrián Molina",
+    "team": "Rayo Vallecano",
+    "position": "GK",
+    "price": 328634
+  },
+  {
+    "name": "Jano",
+    "team": "Atlético de Madrid",
+    "position": "MID",
+    "price": 328634
+  },
+  {
+    "name": "Juanpe Gil",
+    "team": "Rayo Vallecano",
+    "position": "GK",
+    "price": 326935
+  },
+  {
+    "name": "Jofre",
+    "team": "FC Barcelona",
+    "position": "DEF",
+    "price": 324025
+  },
+  {
+    "name": "M. Román",
+    "team": "Celta",
+    "position": "MID",
+    "price": 322729
+  },
+  {
+    "name": "Esquivel",
+    "team": "Atlético de Madrid",
+    "position": "GK",
+    "price": 322729
+  },
+  {
+    "name": "Cayetano",
+    "team": "Levante UD",
+    "position": "GK",
+    "price": 322729
+  },
+  {
+    "name": "Rafa Romero",
+    "team": "Sevilla FC",
+    "position": "GK",
+    "price": 322729
+  },
+  {
+    "name": "Ruben",
+    "team": "Villarreal CF",
+    "position": "GK",
+    "price": 322729
+  },
+  {
+    "name": "J. Ives Valou",
+    "team": "Villarreal CF",
+    "position": "DEF",
+    "price": 322729
+  },
+  {
+    "name": "L. Pinillos",
+    "team": "Deportivo Alavés",
+    "position": "MID",
+    "price": 322729
+  },
+  {
+    "name": "Goti",
+    "team": "Real Sociedad",
+    "position": "MID",
+    "price": 320432
+  },
+  {
+    "name": "A. Roca",
+    "team": "RCD Espanyol de Barcelona",
+    "position": "MID",
+    "price": 319088
+  },
+  {
+    "name": "Stamatakis",
+    "team": "C.A. Osasuna",
+    "position": "GK",
+    "price": 311524
+  },
+  {
+    "name": "R. Chasco",
+    "team": "C.A. Osasuna",
+    "position": "DEF",
+    "price": 311524
+  },
+  {
+    "name": "Gibi",
+    "team": "Girona FC",
+    "position": "DEF",
+    "price": 310733
+  },
+  {
+    "name": "Papa",
+    "team": "Girona FC",
+    "position": "MID",
+    "price": 310733
+  },
+  {
+    "name": "Swiderski",
+    "team": "Deportivo Alavés",
+    "position": "GK",
+    "price": 310613
+  },
+  {
+    "name": "Cheli",
+    "team": "Real Oviedo",
+    "position": "MID",
+    "price": 310613
+  },
+  {
+    "name": "Oso",
+    "team": "Sevilla FC",
+    "position": "DEF",
+    "price": 306231
+  },
+  {
+    "name": "Manu G.",
+    "team": "Real Betis",
+    "position": "GK",
+    "price": 304717
+  },
+  {
+    "name": "Navarro",
+    "team": "Valencia CF",
+    "position": "DEF",
+    "price": 304717
+  },
+  {
+    "name": "Lucas Núñez",
+    "team": "Valencia CF",
+    "position": "MID",
+    "price": 304717
+  },
+  {
+    "name": "Hugo Lopez",
+    "team": "Villarreal CF",
+    "position": "MID",
+    "price": 304717
+  },
+  {
+    "name": "Ramón Martínez",
+    "team": "Sevilla FC",
+    "position": "DEF",
+    "price": 300744
+  },
+  {
+    "name": "Tristán",
+    "team": "RCD Espanyol de Barcelona",
+    "position": "GK",
+    "price": 270772
+  },
+  {
+    "name": "A. Osambela",
+    "team": "C.A. Osasuna",
+    "position": "MID",
+    "price": 259484
+  }
+]

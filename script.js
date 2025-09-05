@@ -1,0 +1,248 @@
+document.addEventListener('DOMContentLoaded', () => {
+    // Get references to HTML elements
+    const playerListDiv = document.getElementById('player-list');
+    const searchBar = document.getElementById('search-bar');
+    const teamListDiv = document.getElementById('team-list');
+    const totalPriceValue = document.getElementById('total-price-value');
+    const historyDaysSelect = document.getElementById('history-days');
+    let historyLength = parseInt(historyDaysSelect.value);
+
+    historyDaysSelect.addEventListener('change', () => {
+        historyLength = parseInt(historyDaysSelect.value);
+        updateTeamHistoryChart();
+    });
+
+    let allPlayers = [];
+    let myTeam = [];
+    if (localStorage.getItem('myTeam')) {
+    try {
+        myTeam = JSON.parse(localStorage.getItem('myTeam'));
+    } catch (e) {
+        myTeam = [];
+    }
+    }
+
+// Cada vez que cambie el equipo, guárdalo en localStorage
+const saveTeam = () => {
+    localStorage.setItem('myTeam', JSON.stringify(myTeam));
+};
+    const teamNameInput = document.getElementById('team-name-input');
+const saveTeamBtn = document.getElementById('save-team-btn');
+const savedTeamsSelect = document.getElementById('saved-teams-select');
+const loadTeamBtn = document.getElementById('load-team-btn');
+const deleteTeamBtn = document.getElementById('delete-team-btn');
+
+// Guarda el equipo actual con el nombre dado
+saveTeamBtn.addEventListener('click', () => {
+    const name = teamNameInput.value.trim();
+    if (!name) {
+        alert('Ponle un nombre a tu equipo');
+        return;
+    }
+    let savedTeams = JSON.parse(localStorage.getItem('savedTeams') || '{}');
+    savedTeams[name] = myTeam;
+    localStorage.setItem('savedTeams', JSON.stringify(savedTeams));
+    updateSavedTeamsSelect();
+    alert('¡Equipo guardado!');
+});
+
+// Actualiza el desplegable de equipos guardados
+function updateSavedTeamsSelect() {
+    let savedTeams = JSON.parse(localStorage.getItem('savedTeams') || '{}');
+    savedTeamsSelect.innerHTML = '<option value="">-- Cargar equipo guardado --</option>';
+    Object.keys(savedTeams).forEach(name => {
+        const option = document.createElement('option');
+        option.value = name;
+        option.textContent = name;
+        savedTeamsSelect.appendChild(option);
+    });
+}
+
+// Carga el equipo seleccionado
+loadTeamBtn.addEventListener('click', () => {
+    const name = savedTeamsSelect.value;
+    if (!name) return;
+    let savedTeams = JSON.parse(localStorage.getItem('savedTeams') || '{}');
+    if (savedTeams[name]) {
+        myTeam = savedTeams[name];
+        saveTeam();
+        updateTeamDisplay();
+    }
+});
+
+// Borra el equipo seleccionado
+deleteTeamBtn.addEventListener('click', () => {
+    const name = savedTeamsSelect.value;
+    if (!name) return;
+    let savedTeams = JSON.parse(localStorage.getItem('savedTeams') || '{}');
+    if (savedTeams[name]) {
+        delete savedTeams[name];
+        localStorage.setItem('savedTeams', JSON.stringify(savedTeams));
+        updateSavedTeamsSelect();
+        alert('Equipo borrado');
+    }
+});
+
+// Inicializa el desplegable al cargar la página
+updateSavedTeamsSelect();
+
+    // Helper function to format the price
+    const formatPrice = (price) => {
+        return `€${(price / 1000000).toFixed(1)}M`;
+    };
+
+    // 1. Fetch player data from the JSON file
+    fetch('players.json')
+        .then(response => response.json())
+        .then(data => {
+            allPlayers = data;
+            displayPlayers(allPlayers);
+            updateTeamDisplay();
+        })
+        .catch(error => console.error('Error loading player data:', error));
+
+    // 2. Function to display players in the list
+    const displayPlayers = (players) => {
+        playerListDiv.innerHTML = '';
+        players.forEach(player => {
+            const playerCard = document.createElement('div');
+            playerCard.classList.add('player-card');
+
+            playerCard.innerHTML = `
+                <h3>${player.name}</h3>
+                <p>${player.team}</p>
+                <p>${player.position}</p>
+                <p class="player-price">${formatPrice(player.price)}</p>
+            `;
+
+            playerCard.addEventListener('click', () => addPlayerToTeam(player));
+            playerListDiv.appendChild(playerCard);
+        });
+    };
+
+    // 3. Function to handle search input
+    searchBar.addEventListener('input', (e) => {
+        const searchTerm = e.target.value.toLowerCase();
+        const filteredPlayers = allPlayers.filter(player =>
+            player.name.toLowerCase().includes(searchTerm) ||
+            player.team.toLowerCase().includes(searchTerm)
+        );
+        displayPlayers(filteredPlayers);
+    });
+
+    // 4. Function to add a player to your team
+    const addPlayerToTeam = (player) => {
+    if (myTeam.some(p => p.name === player.name)) return;
+    myTeam.push(player);
+    saveTeam();
+    updateTeamDisplay();
+};
+    
+    // 5. Function to remove a player from your team using their name
+    const removePlayerFromTeam = (playerName) => {
+    myTeam = myTeam.filter(p => p.name !== playerName);
+    saveTeam();
+    updateTeamDisplay();
+};
+
+    // 6. Function to update the team display and total price
+    const updateTeamDisplay = () => {
+        teamListDiv.innerHTML = '';
+        let totalPrice = 0;
+
+        myTeam.forEach(player => {
+            totalPrice += player.price; // Add the full price
+
+            const teamMemberDiv = document.createElement('div');
+            teamMemberDiv.classList.add('team-member');
+            teamMemberDiv.innerHTML = `
+                <span>${player.name} (${formatPrice(player.price)})</span>
+                <button title="Remove Player">&times;</button>
+            `;
+            
+            // Pass the player's name to the remove function
+            teamMemberDiv.querySelector('button').addEventListener('click', () => removePlayerFromTeam(player.name));
+            teamListDiv.appendChild(teamMemberDiv);
+        });
+
+        // Update total price display using the formatter
+        totalPriceValue.textContent = formatPrice(totalPrice);
+
+        updateTeamHistoryChart();
+    };
+
+
+
+    function updateTeamHistoryChart() {
+    const ctx = document.getElementById('team-history-chart').getContext('2d');
+    const derivativesDiv = document.getElementById('team-history-derivatives');
+    if (window.teamChart) window.teamChart.destroy();
+
+    if (myTeam.length === 0) {
+        derivativesDiv.innerHTML = '';
+        return;
+    }
+
+    // Calcula el mínimo de días disponibles entre todos los jugadores
+    const minHistory = Math.min(...myTeam.map(p => p.price_history.length));
+    const daysToShow = Math.min(historyLength, minHistory);
+
+    const teamHistory = Array(daysToShow).fill(0);
+    for (let i = 0; i < daysToShow; i++) {
+        myTeam.forEach(player => {
+            // Toma los últimos N días
+            const history = player.price_history.slice(-daysToShow);
+            teamHistory[i] += history[i];
+        });
+    }
+
+    // Derivada: diferencia entre días consecutivos
+    const firstDerivative = [];
+    for (let i = 1; i < teamHistory.length; i++) {
+        firstDerivative.push(teamHistory[i] - teamHistory[i - 1]);
+    }
+
+    // Segunda derivada: diferencia de la derivada
+    const secondDerivative = [];
+    for (let i = 1; i < firstDerivative.length; i++) {
+        secondDerivative.push(firstDerivative[i] - firstDerivative[i - 1]);
+    }
+
+    // Mostrar los valores actuales (último valor de cada derivada)
+    derivativesDiv.innerHTML = `
+        <div>
+            <strong>Derivada actual (variación diaria):</strong> ${firstDerivative.length > 0 ? (firstDerivative[firstDerivative.length - 1] / 1000000).toFixed(2) + ' M€/día' : 'N/A'}
+        </div>
+        <div>
+            <strong>2ª Derivada actual (aceleración):</strong> ${secondDerivative.length > 0 ? (secondDerivative[secondDerivative.length - 1] / 1000000).toFixed(2) + ' M€/día²' : 'N/A'}
+        </div>
+    `;
+
+    const labels = Array.from({length: daysToShow}, (_, i) => `Día -${daysToShow - i - 1}`);
+
+    window.teamChart = new Chart(ctx, {
+        type: 'line',
+        data: {
+            labels,
+            datasets: [{
+                label: 'Valor total del equipo',
+                data: teamHistory.map(p => (p / 1000000).toFixed(2)),
+                borderColor: '#007bff',
+                fill: false,
+            }]
+        },
+        options: {
+            responsive: true,
+            plugins: {
+                legend: { display: false }
+            },
+            scales: {
+                y: {
+                    title: { display: true, text: 'Millones €' }
+                }
+            }
+        }
+    });
+}
+
+});
