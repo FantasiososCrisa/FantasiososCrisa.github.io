@@ -46,6 +46,63 @@ saveTeamBtn.addEventListener('click', () => {
     alert('¡Equipo guardado!');
 });
 
+// --- Pestañas ---
+window.showTab = function(tab) {
+    document.getElementById('tab-content-team').style.display = tab === 'team' ? '' : 'none';
+    document.getElementById('tab-content-rankings').style.display = tab === 'rankings' ? '' : 'none';
+    document.getElementById('tab-team').classList.toggle('active', tab === 'team');
+    document.getElementById('tab-rankings').classList.toggle('active', tab === 'rankings');
+};
+
+// --- Rankings ---
+const rankingDaysSelect = document.getElementById('ranking-days');
+rankingDaysSelect.addEventListener('change', updateRankings);
+
+function updateRankings() {
+    const days = parseInt(rankingDaysSelect.value);
+    // Derivada y segunda derivada para cada jugador
+    const derivadas = allPlayers.map(player => {
+        const h = player.price_history;
+        if (!h || h.length < 2) return {...player, derivada: null, segunda: null};
+        const last = h.slice(-days);
+        const derivada = last.length > 1 ? last[last.length-1] - last[last.length-2] : null;
+        const segunda = last.length > 2 ? (last[last.length-1] - last[last.length-2]) - (last[last.length-2] - last[last.length-3]) : null;
+        return {...player, derivada, segunda};
+    });
+
+    // Ranking por derivada
+    const byDerivada = derivadas
+        .filter(p => p.derivada !== null)
+        .sort((a, b) => b.derivada - a.derivada)
+        .slice(0, 20);
+    const tbody1 = document.querySelector('#ranking-derivada tbody');
+    tbody1.innerHTML = byDerivada.map(p => `
+        <tr>
+            <td>${p.name}</td>
+            <td>${p.team}</td>
+            <td>${p.position}</td>
+            <td>${(p.derivada/1000000).toFixed(2)} M€</td>
+        </tr>
+    `).join('');
+
+    // Ranking por segunda derivada
+    const bySegunda = derivadas
+        .filter(p => p.segunda !== null)
+        .sort((a, b) => b.segunda - a.segunda)
+        .slice(0, 20);
+    const tbody2 = document.querySelector('#ranking-segunda-derivada tbody');
+    tbody2.innerHTML = bySegunda.map(p => `
+        <tr>
+            <td>${p.name}</td>
+            <td>${p.team}</td>
+            <td>${p.position}</td>
+            <td>${(p.segunda/1000000).toFixed(2)} M€</td>
+        </tr>
+    `).join('');
+}
+
+// Llama a updateRankings() cuando se carguen los jugadores
+// (dentro del fetch de players.json, después de asignar allPlayers)
 // Actualiza el desplegable de equipos guardados
 function updateSavedTeamsSelect() {
     let savedTeams = JSON.parse(localStorage.getItem('savedTeams') || '{}');
@@ -96,6 +153,7 @@ updateSavedTeamsSelect();
         .then(response => response.json())
         .then(data => {
             allPlayers = data;
+            updateRankings();
             displayPlayers(allPlayers);
             updateTeamDisplay();
         })

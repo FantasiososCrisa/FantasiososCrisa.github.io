@@ -1,50 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Football Team Builder</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
+    <div class="tabs">
+        <button class="tab-btn" id="tab-team" onclick="showTab('team')">Equipo</button>
+        <button class="tab-btn" id="tab-rankings" onclick="showTab('rankings')">Rankings</button>
+    </div>
 
     <div class="container">
-        <div class="player-selection-panel">
-            <h1>Select Players</h1>
-            <input type="text" id="search-bar" placeholder="🔍 Search for a player...">
-            <div id="player-list">
+        <div id="tab-content-team">
+            <div class="player-selection-panel">
+                <h1>Select Players</h1>
+                <input type="text" id="search-bar" placeholder="🔍 Search for a player...">
+                <div id="player-list">
                 </div>
+            </div>
+
+            <div class="team-panel">
+                <h2>Your Team</h2>
+                <div id="team-list">
+                </div>
+                <div class="total-price">
+                    <h3>Total Price: <span id="total-price-value">€0M</span></h3>
+                </div>
+                <div class="team-save-load">
+                    <input type="text" id="team-name-input" placeholder="Nombre del equipo">
+                    <button id="save-team-btn">Guardar equipo</button>
+                    <select id="saved-teams-select">
+                        <option value="">-- Cargar equipo guardado --</option>
+                    </select>
+                    <button id="load-team-btn">Cargar</button>
+                    <button id="delete-team-btn">Borrar</button>
+                </div>
+                <label for="history-days">Días a mostrar:</label>
+                <select id="history-days">
+                    <option value="3">3</option>
+                    <option value="5" selected>5</option>
+                    <option value="7">7</option>
+                    <option value="10">10</option>
+                </select>
+                <div id="team-history-derivatives"></div>
+                <canvas id="team-history-chart" width=600 height="400"></canvas>
+            </div>
         </div>
 
-        <div class="team-panel">
-            <h2>Your Team</h2>
-            <div id="team-list">
-                </div>
-            <div class="total-price">
-                <h3>Total Price: <span id="total-price-value">€0M</span></h3>
-            </div>
-            <div class="team-save-load">
-    <input type="text" id="team-name-input" placeholder="Nombre del equipo">
-    <button id="save-team-btn">Guardar equipo</button>
-    <select id="saved-teams-select">
-        <option value="">-- Cargar equipo guardado --</option>
-    </select>
-    <button id="load-team-btn">Cargar</button>
-    <button id="delete-team-btn">Borrar</button>
-</div>
-            <label for="history-days">Días a mostrar:</label>
-<select id="history-days">
-    <option value="3">3</option>
-    <option value="5" selected>5</option>
-    <option value="7">7</option>
-    <option value="10">10</option>
-</select>   
-            <div id="team-history-derivatives"></div>
-            <canvas id="team-history-chart" width = 600 height="400"></canvas>
+        <div id="tab-content-rankings" style="display:none;">
+            <h2>Rankings de Jugadores</h2>
+            <label for="ranking-days">Días a analizar:</label>
+            <select id="ranking-days">
+                <option value="3">3</option>
+                <option value="5" selected>5</option>
+                <option value="7">7</option>
+                <option value="10">10</option>
+            </select>
+            <h3>Ranking por Derivada (Variación diaria)</h3>
+            <table id="ranking-derivada">
+                <thead>
+                    <tr>
+                        <th>Jugador</th>
+                        <th>Equipo</th>
+                        <th>Posición</th>
+                        <th>Derivada actual (€)</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+            <h3>Ranking por 2ª Derivada (Aceleración)</h3>
+            <table id="ranking-segunda-derivada">
+                <thead>
+                    <tr>
+                        <th>Jugador</th>
+                        <th>Equipo</th>
+                        <th>Posición</th>
+                        <th>2ª Derivada actual (€)</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
         </div>
     </div>
 
     <script src="script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </body>
+
 </html>
