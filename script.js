@@ -15,133 +15,138 @@ document.addEventListener('DOMContentLoaded', () => {
     let allPlayers = [];
     let myTeam = [];
     if (localStorage.getItem('myTeam')) {
-    try {
-        myTeam = JSON.parse(localStorage.getItem('myTeam'));
-    } catch (e) {
-        myTeam = [];
-    }
+        try {
+            myTeam = JSON.parse(localStorage.getItem('myTeam'));
+        } catch (e) {
+            myTeam = [];
+        }
     }
 
-// Cada vez que cambie el equipo, guárdalo en localStorage
-const saveTeam = () => {
-    localStorage.setItem('myTeam', JSON.stringify(myTeam));
-};
+    // Cada vez que cambie el equipo, guárdalo en localStorage
+    const saveTeam = () => {
+        localStorage.setItem('myTeam', JSON.stringify(myTeam));
+    };
     const teamNameInput = document.getElementById('team-name-input');
-const saveTeamBtn = document.getElementById('save-team-btn');
-const savedTeamsSelect = document.getElementById('saved-teams-select');
-const loadTeamBtn = document.getElementById('load-team-btn');
-const deleteTeamBtn = document.getElementById('delete-team-btn');
+    const saveTeamBtn = document.getElementById('save-team-btn');
+    const savedTeamsSelect = document.getElementById('saved-teams-select');
+    const loadTeamBtn = document.getElementById('load-team-btn');
+    const deleteTeamBtn = document.getElementById('delete-team-btn');
 
-// Guarda el equipo actual con el nombre dado
-saveTeamBtn.addEventListener('click', () => {
-    const name = teamNameInput.value.trim();
-    if (!name) {
-        alert('Ponle un nombre a tu equipo');
-        return;
-    }
-    let savedTeams = JSON.parse(localStorage.getItem('savedTeams') || '{}');
-    savedTeams[name] = myTeam;
-    localStorage.setItem('savedTeams', JSON.stringify(savedTeams));
-    updateSavedTeamsSelect();
-    alert('¡Equipo guardado!');
-});
-
-// --- Pestañas ---
-window.showTab = function(tab) {
-    document.getElementById('tab-content-team').style.display = tab === 'team' ? '' : 'none';
-    document.getElementById('tab-content-rankings').style.display = tab === 'rankings' ? '' : 'none';
-    document.getElementById('tab-team').classList.toggle('active', tab === 'team');
-    document.getElementById('tab-rankings').classList.toggle('active', tab === 'rankings');
-};
-
-// --- Rankings ---
-const rankingDaysSelect = document.getElementById('ranking-days');
-rankingDaysSelect.addEventListener('change', updateRankings);
-
-function updateRankings() {
-    const days = parseInt(rankingDaysSelect.value);
-    // Derivada y segunda derivada para cada jugador
-    const derivadas = allPlayers.map(player => {
-        const h = player.price_history;
-        if (!h || h.length < 2) return {...player, derivada: null, segunda: null};
-        const last = h.slice(-days);
-        const derivada = last.length > 1 ? last[last.length-1] - last[last.length-2] : null;
-        const segunda = last.length > 2 ? (last[last.length-1] - last[last.length-2]) - (last[last.length-2] - last[last.length-3]) : null;
-        return {...player, derivada, segunda};
-    });
-
-    // Ranking por derivada
-    const byDerivada = derivadas
-        .filter(p => p.derivada !== null)
-        .sort((a, b) => b.derivada - a.derivada)
-        .slice(0, 20);
-    const tbody1 = document.querySelector('#ranking-derivada tbody');
-    tbody1.innerHTML = byDerivada.map(p => `
-        <tr>
-            <td>${p.name}</td>
-            <td>${p.team}</td>
-            <td>${p.position}</td>
-            <td>${(p.derivada/1000000).toFixed(2)} M€</td>
-        </tr>
-    `).join('');
-
-    // Ranking por segunda derivada
-    const bySegunda = derivadas
-        .filter(p => p.segunda !== null)
-        .sort((a, b) => b.segunda - a.segunda)
-        .slice(0, 20);
-    const tbody2 = document.querySelector('#ranking-segunda-derivada tbody');
-    tbody2.innerHTML = bySegunda.map(p => `
-        <tr>
-            <td>${p.name}</td>
-            <td>${p.team}</td>
-            <td>${p.position}</td>
-            <td>${(p.segunda/1000000).toFixed(2)} M€</td>
-        </tr>
-    `).join('');
-}
-
-// Llama a updateRankings() cuando se carguen los jugadores
-// (dentro del fetch de players.json, después de asignar allPlayers)
-// Actualiza el desplegable de equipos guardados
-function updateSavedTeamsSelect() {
-    let savedTeams = JSON.parse(localStorage.getItem('savedTeams') || '{}');
-    savedTeamsSelect.innerHTML = '<option value="">-- Cargar equipo guardado --</option>';
-    Object.keys(savedTeams).forEach(name => {
-        const option = document.createElement('option');
-        option.value = name;
-        option.textContent = name;
-        savedTeamsSelect.appendChild(option);
-    });
-}
-
-// Carga el equipo seleccionado
-loadTeamBtn.addEventListener('click', () => {
-    const name = savedTeamsSelect.value;
-    if (!name) return;
-    let savedTeams = JSON.parse(localStorage.getItem('savedTeams') || '{}');
-    if (savedTeams[name]) {
-        myTeam = savedTeams[name];
-        saveTeam();
-        updateTeamDisplay();
-    }
-});
-
-// Borra el equipo seleccionado
-deleteTeamBtn.addEventListener('click', () => {
-    const name = savedTeamsSelect.value;
-    if (!name) return;
-    let savedTeams = JSON.parse(localStorage.getItem('savedTeams') || '{}');
-    if (savedTeams[name]) {
-        delete savedTeams[name];
+    // Guarda el equipo actual con el nombre dado
+    saveTeamBtn.addEventListener('click', () => {
+        const name = teamNameInput.value.trim();
+        if (!name) {
+            alert('Ponle un nombre a tu equipo');
+            return;
+        }
+        let savedTeams = JSON.parse(localStorage.getItem('savedTeams') || '{}');
+        savedTeams[name] = myTeam;
         localStorage.setItem('savedTeams', JSON.stringify(savedTeams));
         updateSavedTeamsSelect();
-        alert('Equipo borrado');
-    }
-});
+        alert('¡Equipo guardado!');
+    });
 
-// Inicializa el desplegable al cargar la página
-updateSavedTeamsSelect();
+    // --- Pestañas ---
+    window.showTab = function (tab) {
+        document.getElementById('tab-content-team').style.display = tab === 'team' ? '' : 'none';
+        document.getElementById('tab-content-rankings').style.display = tab === 'rankings' ? '' : 'none';
+        document.getElementById('tab-team').classList.toggle('active', tab === 'team');
+        document.getElementById('tab-rankings').classList.toggle('active', tab === 'rankings');
+    };
+
+    // --- Rankings ---
+    const rankingDaysSelect = document.getElementById('ranking-days');
+    rankingDaysSelect.addEventListener('change', updateRankings);
+
+    function updateRankings() {
+        const days = parseInt(rankingDaysSelect.value);
+        // Derivada y segunda derivada para cada jugador
+        const derivadas = allPlayers.map(player => {
+            const h = player.price_history;
+            if (!h || h.length < 2) return { ...player, derivada: null, segunda: null };
+            const last = h.slice(-days);
+            const derivada = last.length > 1 ? last[last.length - 1] - last[last.length - 2] : null;
+            const segunda = last.length > 2 ? (last[last.length - 1] - last[last.length - 2]) - (last[last.length - 2] - last[last.length - 3]) : null;
+            return { ...player, derivada, segunda };
+        });
+
+        // Ranking por derivada
+        const byDerivada = derivadas
+            .filter(p => p.derivada !== null)
+            .sort((a, b) => b.derivada - a.derivada)
+            .slice(0, 20);
+        const tbody1 = document.querySelector('#ranking-derivada tbody');
+        tbody1.innerHTML = byDerivada.map(p => `
+        <tr>
+            <td>${p.name}</td>
+            <td>${p.team}</td>
+            <td>${p.position}</td>
+            <td>${(p.derivada / 1000000).toFixed(2)} M€</td>
+        </tr>
+    `).join('');
+
+        // Ranking por segunda derivada
+        const bySegunda = derivadas
+            .filter(p => p.segunda !== null)
+            .sort((a, b) => b.segunda - a.segunda)
+            .slice(0, 20);
+        const tbody2 = document.querySelector('#ranking-segunda-derivada tbody');
+        tbody2.innerHTML = bySegunda.map(p => `
+        <tr>
+            <td>${p.name}</td>
+            <td>${p.team}</td>
+            <td>${p.position}</td>
+            <td>${(p.segunda / 1000000).toFixed(2)} M€</td>
+        </tr>
+    `).join('');
+    }
+
+    // Llama a updateRankings() cuando se carguen los jugadores
+    // (dentro del fetch de players.json, después de asignar allPlayers)
+    // Actualiza el desplegable de equipos guardados
+    function updateSavedTeamsSelect() {
+        let savedTeams = JSON.parse(localStorage.getItem('savedTeams') || '{}');
+        savedTeamsSelect.innerHTML = '<option value="">-- Cargar equipo guardado --</option>';
+        Object.keys(savedTeams).forEach(name => {
+            const option = document.createElement('option');
+            option.value = name;
+            option.textContent = name;
+            savedTeamsSelect.appendChild(option);
+        });
+    }
+
+    // Carga el equipo seleccionado
+    loadTeamBtn.addEventListener('click', () => {
+        const name = savedTeamsSelect.value;
+        if (!name) return;
+        let savedTeams = JSON.parse(localStorage.getItem('savedTeams') || '{}');
+        if (savedTeams[name]) {
+            // Reconstruir el equipo con los datos actuales
+            const savedTeam = savedTeams[name];
+            myTeam = savedTeam.map(savedPlayer => {
+                // Busca el jugador actual por nombre (o por ID si tienes)
+                return allPlayers.find(p => p.name === savedPlayer.name) || savedPlayer;
+            });
+            saveTeam();
+            updateTeamDisplay();
+        }
+    });
+
+    // Borra el equipo seleccionado
+    deleteTeamBtn.addEventListener('click', () => {
+        const name = savedTeamsSelect.value;
+        if (!name) return;
+        let savedTeams = JSON.parse(localStorage.getItem('savedTeams') || '{}');
+        if (savedTeams[name]) {
+            delete savedTeams[name];
+            localStorage.setItem('savedTeams', JSON.stringify(savedTeams));
+            updateSavedTeamsSelect();
+            alert('Equipo borrado');
+        }
+    });
+
+    // Inicializa el desplegable al cargar la página
+    updateSavedTeamsSelect();
 
     // Helper function to format the price
     const formatPrice = (price) => {
@@ -190,18 +195,18 @@ updateSavedTeamsSelect();
 
     // 4. Function to add a player to your team
     const addPlayerToTeam = (player) => {
-    if (myTeam.some(p => p.name === player.name)) return;
-    myTeam.push(player);
-    saveTeam();
-    updateTeamDisplay();
-};
-    
+        if (myTeam.some(p => p.name === player.name)) return;
+        myTeam.push(player);
+        saveTeam();
+        updateTeamDisplay();
+    };
+
     // 5. Function to remove a player from your team using their name
     const removePlayerFromTeam = (playerName) => {
-    myTeam = myTeam.filter(p => p.name !== playerName);
-    saveTeam();
-    updateTeamDisplay();
-};
+        myTeam = myTeam.filter(p => p.name !== playerName);
+        saveTeam();
+        updateTeamDisplay();
+    };
 
     // 6. Function to update the team display and total price
     const updateTeamDisplay = () => {
@@ -217,7 +222,7 @@ updateSavedTeamsSelect();
                 <span>${player.name} (${formatPrice(player.price)})</span>
                 <button title="Remove Player">&times;</button>
             `;
-            
+
             // Pass the player's name to the remove function
             teamMemberDiv.querySelector('button').addEventListener('click', () => removePlayerFromTeam(player.name));
             teamListDiv.appendChild(teamMemberDiv);
@@ -232,42 +237,42 @@ updateSavedTeamsSelect();
 
 
     function updateTeamHistoryChart() {
-    const ctx = document.getElementById('team-history-chart').getContext('2d');
-    const derivativesDiv = document.getElementById('team-history-derivatives');
-    if (window.teamChart) window.teamChart.destroy();
+        const ctx = document.getElementById('team-history-chart').getContext('2d');
+        const derivativesDiv = document.getElementById('team-history-derivatives');
+        if (window.teamChart) window.teamChart.destroy();
 
-    if (myTeam.length === 0) {
-        derivativesDiv.innerHTML = '';
-        return;
-    }
+        if (myTeam.length === 0) {
+            derivativesDiv.innerHTML = '';
+            return;
+        }
 
-    // Calcula el mínimo de días disponibles entre todos los jugadores
-    const minHistory = Math.min(...myTeam.map(p => p.price_history.length));
-    const daysToShow = Math.min(historyLength, minHistory);
+        // Calcula el mínimo de días disponibles entre todos los jugadores
+        const minHistory = Math.min(...myTeam.map(p => p.price_history.length));
+        const daysToShow = Math.min(historyLength, minHistory);
 
-    const teamHistory = Array(daysToShow).fill(0);
-    for (let i = 0; i < daysToShow; i++) {
-        myTeam.forEach(player => {
-            // Toma los últimos N días
-            const history = player.price_history.slice(-daysToShow);
-            teamHistory[i] += history[i];
-        });
-    }
+        const teamHistory = Array(daysToShow).fill(0);
+        for (let i = 0; i < daysToShow; i++) {
+            myTeam.forEach(player => {
+                // Toma los últimos N días
+                const history = player.price_history.slice(-daysToShow);
+                teamHistory[i] += history[i];
+            });
+        }
 
-    // Derivada: diferencia entre días consecutivos
-    const firstDerivative = [];
-    for (let i = 1; i < teamHistory.length; i++) {
-        firstDerivative.push(teamHistory[i] - teamHistory[i - 1]);
-    }
+        // Derivada: diferencia entre días consecutivos
+        const firstDerivative = [];
+        for (let i = 1; i < teamHistory.length; i++) {
+            firstDerivative.push(teamHistory[i] - teamHistory[i - 1]);
+        }
 
-    // Segunda derivada: diferencia de la derivada
-    const secondDerivative = [];
-    for (let i = 1; i < firstDerivative.length; i++) {
-        secondDerivative.push(firstDerivative[i] - firstDerivative[i - 1]);
-    }
+        // Segunda derivada: diferencia de la derivada
+        const secondDerivative = [];
+        for (let i = 1; i < firstDerivative.length; i++) {
+            secondDerivative.push(firstDerivative[i] - firstDerivative[i - 1]);
+        }
 
-    // Mostrar los valores actuales (último valor de cada derivada)
-    derivativesDiv.innerHTML = `
+        // Mostrar los valores actuales (último valor de cada derivada)
+        derivativesDiv.innerHTML = `
         <div>
             <strong>Derivada actual (variación diaria):</strong> ${firstDerivative.length > 0 ? (firstDerivative[firstDerivative.length - 1] / 1000000).toFixed(2) + ' M€/día' : 'N/A'}
         </div>
@@ -276,31 +281,31 @@ updateSavedTeamsSelect();
         </div>
     `;
 
-    const labels = Array.from({length: daysToShow}, (_, i) => `Día -${daysToShow - i - 1}`);
+        const labels = Array.from({ length: daysToShow }, (_, i) => `Día -${daysToShow - i - 1}`);
 
-    window.teamChart = new Chart(ctx, {
-        type: 'line',
-        data: {
-            labels,
-            datasets: [{
-                label: 'Valor total del equipo',
-                data: teamHistory.map(p => (p / 1000000).toFixed(2)),
-                borderColor: '#007bff',
-                fill: false,
-            }]
-        },
-        options: {
-            responsive: true,
-            plugins: {
-                legend: { display: false }
+        window.teamChart = new Chart(ctx, {
+            type: 'line',
+            data: {
+                labels,
+                datasets: [{
+                    label: 'Valor total del equipo',
+                    data: teamHistory.map(p => (p / 1000000).toFixed(2)),
+                    borderColor: '#007bff',
+                    fill: false,
+                }]
             },
-            scales: {
-                y: {
-                    title: { display: true, text: 'Millones €' }
+            options: {
+                responsive: true,
+                plugins: {
+                    legend: { display: false }
+                },
+                scales: {
+                    y: {
+                        title: { display: true, text: 'Millones €' }
+                    }
                 }
             }
-        }
-    });
-}
+        });
+    }
 
 });
