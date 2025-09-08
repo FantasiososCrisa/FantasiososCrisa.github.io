@@ -3,7 +3,7 @@ import os
 import sys
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 
-p = "./fantasyscrapper/json_files/laligafantasy_laliga_data.json"
+p = "/Users/pablo/Documents/Webapp/fantasyscrapper/json_files/laligafantasy_laliga_data.json"
 with open(p, 'r', encoding='utf-8') as f:
     data = json.load(f)
 
