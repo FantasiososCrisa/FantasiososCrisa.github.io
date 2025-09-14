@@ -50,10 +50,13 @@ document.addEventListener('DOMContentLoaded', () => {
     window.showTab = function (tab) {
     document.getElementById('tab-content-team').style.display = tab === 'team' ? '' : 'none';
     document.getElementById('tab-content-rankings').style.display = tab === 'rankings' ? '' : 'none';
-    document.getElementById('tab-content-market').style.display = tab === 'market' ? '' : 'none'; // NUEVO
+    document.getElementById('tab-content-market').style.display = tab === 'market' ? '' : 'none';
     document.getElementById('tab-team').classList.toggle('active', tab === 'team');
     document.getElementById('tab-rankings').classList.toggle('active', tab === 'rankings');
-    document.getElementById('tab-market').classList.toggle('active', tab === 'market'); // NUEVO
+    document.getElementById('tab-market').classList.toggle('active', tab === 'market');
+    if (tab === 'market') {
+        updateMarketHistoryChart(); // <-- Solo aquí
+    }
 };
 
     // --- Rankings ---
