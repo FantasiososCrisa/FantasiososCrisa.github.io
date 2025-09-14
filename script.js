@@ -48,11 +48,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // --- Pestañas ---
     window.showTab = function (tab) {
-        document.getElementById('tab-content-team').style.display = tab === 'team' ? '' : 'none';
-        document.getElementById('tab-content-rankings').style.display = tab === 'rankings' ? '' : 'none';
-        document.getElementById('tab-team').classList.toggle('active', tab === 'team');
-        document.getElementById('tab-rankings').classList.toggle('active', tab === 'rankings');
-    };
+    document.getElementById('tab-content-team').style.display = tab === 'team' ? '' : 'none';
+    document.getElementById('tab-content-rankings').style.display = tab === 'rankings' ? '' : 'none';
+    document.getElementById('tab-content-market').style.display = tab === 'market' ? '' : 'none'; // NUEVO
+    document.getElementById('tab-team').classList.toggle('active', tab === 'team');
+    document.getElementById('tab-rankings').classList.toggle('active', tab === 'rankings');
+    document.getElementById('tab-market').classList.toggle('active', tab === 'market'); // NUEVO
+};
 
     // --- Rankings ---
     const rankingDaysSelect = document.getElementById('ranking-days');
@@ -161,6 +163,7 @@ document.addEventListener('DOMContentLoaded', () => {
             updateRankings();
             displayPlayers(allPlayers);
             updateTeamDisplay();
+            updateMarketHistoryChart();
         })
         .catch(error => console.error('Error loading player data:', error));
 
@@ -308,4 +311,82 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
+    // --- Mercado total ---
+    const marketHistoryDaysSelect = document.getElementById('market-history-days');
+    marketHistoryDaysSelect.addEventListener('change', updateMarketHistoryChart);
+
+    function updateMarketHistoryChart() {
+    if (!allPlayers.length) return;
+    const days = parseInt(marketHistoryDaysSelect.value);
+
+    const derivativesDiv = document.getElementById('market-history-derivatives');
+    const ctx = document.getElementById('market-history-chart').getContext('2d');
+    if (window.marketChart) window.marketChart.destroy();
+
+    // 1. Calcula el máximo historial disponible entre todos los jugadores
+    const maxHistory = Math.max(...allPlayers.map(p => p.price_history.length));
+    if (maxHistory < 2) {
+        derivativesDiv.innerHTML = `<div>No hay suficientes datos para mostrar la gráfica.</div>`;
+        ctx.clearRect(0, 0, ctx.canvas.width, ctx.canvas.height);
+        return;
+    }
+
+    // 2. Para cada día (de los últimos N), suma el valor de todos los jugadores, usando 0 si no hay dato
+    const marketHistory = [];
+    for (let i = days; i > 0; i--) {
+        let daySum = 0;
+        allPlayers.forEach(player => {
+            const history = player.price_history;
+            const idx = history.length - i;
+            daySum += idx >= 0 ? history[idx] : 0;
+        });
+        marketHistory.push(daySum);
+    }
+
+    // 3. Derivada y segunda derivada sobre los datos mostrados
+    const firstDerivative = [];
+    for (let i = 1; i < marketHistory.length; i++) {
+        firstDerivative.push(marketHistory[i] - marketHistory[i - 1]);
+    }
+    const secondDerivative = [];
+    for (let i = 1; i < firstDerivative.length; i++) {
+        secondDerivative.push(firstDerivative[i] - firstDerivative[i - 1]);
+    }
+
+    derivativesDiv.innerHTML = `
+        <div>
+            <strong>Derivada actual (variación diaria):</strong> ${firstDerivative.length > 0 ? (firstDerivative[firstDerivative.length - 1] / 1000000).toFixed(2) + ' M€/día' : 'N/A'}
+        </div>
+        <div>
+            <strong>2ª Derivada actual (aceleración):</strong> ${secondDerivative.length > 0 ? (secondDerivative[secondDerivative.length - 1] / 1000000).toFixed(2) + ' M€/día²' : 'N/A'}
+        </div>
+    `;
+
+    const labels = Array.from({ length: days }, (_, i) => `Día -${days - i - 1}`);
+
+    window.marketChart = new Chart(ctx, {
+        type: 'line',
+        data: {
+            labels,
+            datasets: [{
+                label: 'Valor total del mercado',
+                data: marketHistory.map(p => (p / 1000000).toFixed(2)),
+                borderColor: '#28a745',
+                fill: false,
+            }]
+        },
+        options: {
+            responsive: true,
+            plugins: {
+                legend: { display: false }
+            },
+            scales: {
+                y: {
+                    title: { display: true, text: 'Millones €' }
+                }
+            }
+        }
+    });
+}
+    
 });
